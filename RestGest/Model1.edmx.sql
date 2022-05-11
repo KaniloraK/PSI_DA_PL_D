@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/11/2022 21:39:55
+-- Date Created: 05/11/2022 21:52:51
 -- Generated from EDMX file: C:\Users\ruben\source\repos\DA_Proejto\PSI_DA_PL_D\RestGest\Model1.edmx
 -- --------------------------------------------------
 
@@ -59,15 +59,6 @@ GO
 IF OBJECT_ID(N'[dbo].[FK_ItemMenuCategoria]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[ItemMenus] DROP CONSTRAINT [FK_ItemMenuCategoria];
 GO
-IF OBJECT_ID(N'[dbo].[FK_CarroCliente]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Carros] DROP CONSTRAINT [FK_CarroCliente];
-GO
-IF OBJECT_ID(N'[dbo].[FK_CarroServico]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Servicos] DROP CONSTRAINT [FK_CarroServico];
-GO
-IF OBJECT_ID(N'[dbo].[FK_ServicoParcela]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Parcelas] DROP CONSTRAINT [FK_ServicoParcela];
-GO
 IF OBJECT_ID(N'[dbo].[FK_Trabalhador_inherits_Pessoa]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Pessoas_Trabalhador] DROP CONSTRAINT [FK_Trabalhador_inherits_Pessoa];
 GO
@@ -105,18 +96,6 @@ IF OBJECT_ID(N'[dbo].[MetodoPagamentos]', 'U') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[Moradas]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Moradas];
-GO
-IF OBJECT_ID(N'[dbo].[Carros]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Carros];
-GO
-IF OBJECT_ID(N'[dbo].[Cliente1]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Cliente1];
-GO
-IF OBJECT_ID(N'[dbo].[Parcelas]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Parcelas];
-GO
-IF OBJECT_ID(N'[dbo].[Servicos]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Servicos];
 GO
 IF OBJECT_ID(N'[dbo].[Pessoas_Trabalhador]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Pessoas_Trabalhador];
@@ -217,40 +196,6 @@ CREATE TABLE [dbo].[Moradas] (
 );
 GO
 
--- Creating table 'Carros'
-CREATE TABLE [dbo].[Carros] (
-    [IdCarro] int IDENTITY(1,1) NOT NULL,
-    [ClienteIdCliente] int  NOT NULL,
-    [Matricula] nvarchar(max)  NOT NULL
-);
-GO
-
--- Creating table 'Cliente1'
-CREATE TABLE [dbo].[Cliente1] (
-    [IdCliente] int IDENTITY(1,1) NOT NULL,
-    [Nome] nvarchar(max)  NOT NULL,
-    [NIF] int  NOT NULL
-);
-GO
-
--- Creating table 'Parcelas'
-CREATE TABLE [dbo].[Parcelas] (
-    [IdParcelas] int IDENTITY(1,1) NOT NULL,
-    [Valor] float  NOT NULL,
-    [Descricao] nvarchar(max)  NOT NULL,
-    [ServicoIdServico] int  NOT NULL
-);
-GO
-
--- Creating table 'Servicos'
-CREATE TABLE [dbo].[Servicos] (
-    [IdServico] int IDENTITY(1,1) NOT NULL,
-    [Data] datetime  NOT NULL,
-    [Tipo] nvarchar(max)  NOT NULL,
-    [CarroIdCarro] int  NOT NULL
-);
-GO
-
 -- Creating table 'Pessoas_Trabalhador'
 CREATE TABLE [dbo].[Pessoas_Trabalhador] (
     [Salario] float  NOT NULL,
@@ -338,30 +283,6 @@ GO
 ALTER TABLE [dbo].[Moradas]
 ADD CONSTRAINT [PK_Moradas]
     PRIMARY KEY CLUSTERED ([Id] ASC);
-GO
-
--- Creating primary key on [IdCarro] in table 'Carros'
-ALTER TABLE [dbo].[Carros]
-ADD CONSTRAINT [PK_Carros]
-    PRIMARY KEY CLUSTERED ([IdCarro] ASC);
-GO
-
--- Creating primary key on [IdCliente] in table 'Cliente1'
-ALTER TABLE [dbo].[Cliente1]
-ADD CONSTRAINT [PK_Cliente1]
-    PRIMARY KEY CLUSTERED ([IdCliente] ASC);
-GO
-
--- Creating primary key on [IdParcelas] in table 'Parcelas'
-ALTER TABLE [dbo].[Parcelas]
-ADD CONSTRAINT [PK_Parcelas]
-    PRIMARY KEY CLUSTERED ([IdParcelas] ASC);
-GO
-
--- Creating primary key on [IdServico] in table 'Servicos'
-ALTER TABLE [dbo].[Servicos]
-ADD CONSTRAINT [PK_Servicos]
-    PRIMARY KEY CLUSTERED ([IdServico] ASC);
 GO
 
 -- Creating primary key on [Id] in table 'Pessoas_Trabalhador'
@@ -588,51 +509,6 @@ GO
 CREATE INDEX [IX_FK_ItemMenuCategoria]
 ON [dbo].[ItemMenus]
     ([CategoriaId]);
-GO
-
--- Creating foreign key on [ClienteIdCliente] in table 'Carros'
-ALTER TABLE [dbo].[Carros]
-ADD CONSTRAINT [FK_CarroCliente]
-    FOREIGN KEY ([ClienteIdCliente])
-    REFERENCES [dbo].[Cliente1]
-        ([IdCliente])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
-GO
-
--- Creating non-clustered index for FOREIGN KEY 'FK_CarroCliente'
-CREATE INDEX [IX_FK_CarroCliente]
-ON [dbo].[Carros]
-    ([ClienteIdCliente]);
-GO
-
--- Creating foreign key on [CarroIdCarro] in table 'Servicos'
-ALTER TABLE [dbo].[Servicos]
-ADD CONSTRAINT [FK_CarroServico]
-    FOREIGN KEY ([CarroIdCarro])
-    REFERENCES [dbo].[Carros]
-        ([IdCarro])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
-GO
-
--- Creating non-clustered index for FOREIGN KEY 'FK_CarroServico'
-CREATE INDEX [IX_FK_CarroServico]
-ON [dbo].[Servicos]
-    ([CarroIdCarro]);
-GO
-
--- Creating foreign key on [ServicoIdServico] in table 'Parcelas'
-ALTER TABLE [dbo].[Parcelas]
-ADD CONSTRAINT [FK_ServicoParcela]
-    FOREIGN KEY ([ServicoIdServico])
-    REFERENCES [dbo].[Servicos]
-        ([IdServico])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
-GO
-
--- Creating non-clustered index for FOREIGN KEY 'FK_ServicoParcela'
-CREATE INDEX [IX_FK_ServicoParcela]
-ON [dbo].[Parcelas]
-    ([ServicoIdServico]);
 GO
 
 -- Creating foreign key on [Id] in table 'Pessoas_Trabalhador'

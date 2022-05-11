@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5c21a56ef8dd4b569a084623fc26f954" Name="Diagram1" ZoomLevel="69" >
+      <Diagram DiagramId="5c21a56ef8dd4b569a084623fc26f954" Name="Diagram1" ZoomLevel="50" >
         <EntityTypeShape EntityType="Model1.Pessoa" Width="1.5" PointX="2.125" PointY="1.5" />
         <EntityTypeShape EntityType="Model1.Restaurante" Width="1.5" PointX="11.25" PointY="1.5" />
         <EntityTypeShape EntityType="Model1.ItemMenu" Width="1.5" PointX="11.25" PointY="4.875" />
@@ -30,14 +30,7 @@
         <AssociationConnector Association="Model1.PedidoPagamento" />
         <AssociationConnector Association="Model1.PagamentoMetodoPagamento" />
         <AssociationConnector Association="Model1.ItemMenuCategoria" />
-        <EntityTypeShape EntityType="Model1.Carro" Width="1.5" PointX="5.625" PointY="12" />
-        <EntityTypeShape EntityType="Model1.Cliente1" Width="1.5" PointX="3.375" PointY="12.125" />
-        <EntityTypeShape EntityType="Model1.Parcela" Width="1.5" PointX="10.125" PointY="12" />
-        <EntityTypeShape EntityType="Model1.Servico" Width="1.5" PointX="7.875" PointY="11.875" />
-        <AssociationConnector Association="Model1.FK_CarroCliente" />
-        <AssociationConnector Association="Model1.FK_CarroServico" />
-        <AssociationConnector Association="Model1.FK_ServicoParcela" />
-      </Diagram>
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

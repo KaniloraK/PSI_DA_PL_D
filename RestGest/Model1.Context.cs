@@ -34,9 +34,5 @@ namespace RestGest
         public virtual DbSet<Estado> Estados { get; set; }
         public virtual DbSet<MetodoPagamento> MetodoPagamentos { get; set; }
         public virtual DbSet<Morada> Moradas { get; set; }
-        public virtual DbSet<Carro> Carros { get; set; }
-        public virtual DbSet<Cliente1> Cliente1 { get; set; }
-        public virtual DbSet<Parcela> Parcelas { get; set; }
-        public virtual DbSet<Servico> Servicos { get; set; }
     }
 }
