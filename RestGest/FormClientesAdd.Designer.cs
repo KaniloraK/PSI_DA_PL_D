@@ -1,6 +1,6 @@
 ﻿namespace RestGest
 {
-    partial class Form1
+    partial class FormClientesAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -37,4 +37,3 @@
         #endregion
     }
 }
-

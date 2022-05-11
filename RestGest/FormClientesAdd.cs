@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RestGest
 {
-    public partial class Form1 : Form
+    public partial class FormClientesAdd : Form
     {
-        public Form1()
+        public FormClientesAdd()
         {
             InitializeComponent();
         }
