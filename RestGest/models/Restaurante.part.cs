@@ -8,12 +8,10 @@ namespace RestGest
 {
     public partial class Restaurante
     {
-       
         public Restaurante(string nome)
         {
             Nome = nome;
             this.Nome = nome;
-               
         }
 
         public override string ToString()

@@ -128,7 +128,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="models\Cliente.part.cs" />
+    <Compile Include="models\ItemMenu.part.cs" />
     <Compile Include="models\Morada.part.cs" />
+    <Compile Include="models\Pedido.part.cs" />
+    <Compile Include="models\Pessoa.part.cs" />
     <Compile Include="models\Restaurante.part.cs" />
     <Compile Include="Morada.cs">
       <DependentUpon>Model1.tt</DependentUpon>

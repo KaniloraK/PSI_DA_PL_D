@@ -14,7 +14,7 @@ namespace RestGest
         private void btAbrirMenu_Click(object sender, EventArgs e)
         {
             new FormRegistarRestaurante().Show();
-            this.Hide();
+            this.WindowState = FormWindowState.Minimized; 
         }
 
         private void btAlterarRestaurante_Click(object sender, EventArgs e)
