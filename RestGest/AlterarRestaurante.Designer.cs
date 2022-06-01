@@ -34,18 +34,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbRestauranteAAlterar = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNome = new System.Windows.Forms.TextBox();
+            this.tbRua = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbPais = new System.Windows.Forms.TextBox();
+            this.tbCidade = new System.Windows.Forms.TextBox();
+            this.tbCodPostal = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btAlterarRestaurante = new System.Windows.Forms.Button();
             this.btSairMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -98,35 +98,36 @@
             this.cbRestauranteAAlterar.Name = "cbRestauranteAAlterar";
             this.cbRestauranteAAlterar.Size = new System.Drawing.Size(293, 24);
             this.cbRestauranteAAlterar.TabIndex = 4;
+            this.cbRestauranteAAlterar.DropDown += new System.EventHandler(this.cbRestauranteAAlterar_DropDown);
             // 
-            // textBox1
+            // tbNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 143);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 22);
-            this.textBox1.TabIndex = 5;
+            this.tbNome.Location = new System.Drawing.Point(179, 143);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(241, 22);
+            this.tbNome.TabIndex = 5;
             // 
-            // textBox2
+            // tbRua
             // 
-            this.textBox2.Location = new System.Drawing.Point(179, 190);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 22);
-            this.textBox2.TabIndex = 6;
+            this.tbRua.Location = new System.Drawing.Point(179, 190);
+            this.tbRua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbRua.Name = "tbRua";
+            this.tbRua.Size = new System.Drawing.Size(241, 22);
+            this.tbRua.TabIndex = 6;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.tbPais);
+            this.groupBox1.Controls.Add(this.tbCidade);
+            this.groupBox1.Controls.Add(this.tbCodPostal);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.tbRua);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbNome);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cbRestauranteAAlterar);
             this.groupBox1.Location = new System.Drawing.Point(195, 138);
@@ -138,6 +139,60 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alterar Restaurante";
             // 
+            // tbPais
+            // 
+            this.tbPais.Location = new System.Drawing.Point(179, 336);
+            this.tbPais.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbPais.Name = "tbPais";
+            this.tbPais.Size = new System.Drawing.Size(241, 22);
+            this.tbPais.TabIndex = 14;
+            // 
+            // tbCidade
+            // 
+            this.tbCidade.Location = new System.Drawing.Point(179, 238);
+            this.tbCidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbCidade.Name = "tbCidade";
+            this.tbCidade.Size = new System.Drawing.Size(241, 22);
+            this.tbCidade.TabIndex = 13;
+            // 
+            // tbCodPostal
+            // 
+            this.tbCodPostal.Location = new System.Drawing.Point(208, 288);
+            this.tbCodPostal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbCodPostal.Name = "tbCodPostal";
+            this.tbCodPostal.Size = new System.Drawing.Size(212, 22);
+            this.tbCodPostal.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(24, 230);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 29);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Cidade:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(24, 281);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(178, 29);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Código Postal:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 329);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 29);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "País:";
+            // 
             // btAlterarRestaurante
             // 
             this.btAlterarRestaurante.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -148,6 +203,7 @@
             this.btAlterarRestaurante.TabIndex = 8;
             this.btAlterarRestaurante.Text = "Alterar";
             this.btAlterarRestaurante.UseVisualStyleBackColor = false;
+            this.btAlterarRestaurante.Click += new System.EventHandler(this.btAlterarRestaurante_Click);
             // 
             // btSairMenu
             // 
@@ -165,66 +221,12 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(13, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(157, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 329);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 29);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "País:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(24, 281);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(178, 29);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Código Postal:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(24, 230);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 29);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Cidade:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(208, 288);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 22);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(179, 238);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 22);
-            this.textBox4.TabIndex = 13;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(179, 336);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(241, 22);
-            this.textBox5.TabIndex = 14;
             // 
             // AlterarRestaurante
             // 
@@ -236,6 +238,7 @@
             this.Controls.Add(this.btAlterarRestaurante);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AlterarRestaurante";
             this.Text = "AlterarRestaurante";
@@ -254,15 +257,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbRestauranteAAlterar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNome;
+        private System.Windows.Forms.TextBox tbRua;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btAlterarRestaurante;
         private System.Windows.Forms.Button btSairMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbPais;
+        private System.Windows.Forms.TextBox tbCidade;
+        private System.Windows.Forms.TextBox tbCodPostal;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;

@@ -21,9 +21,5 @@ namespace RestGest.models
             this.pais = pais;
         }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
     }
 }

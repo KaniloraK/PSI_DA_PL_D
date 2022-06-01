@@ -19,7 +19,6 @@
         <EntityTypeShape EntityType="RestGest.Trabalhador" Width="1.5" PointX="3.625" PointY="4.125" />
         <InheritanceConnector EntityType="RestGest.Trabalhador" />
         <AssociationConnector Association="RestGest.PessoaMorada" />
-        <AssociationConnector Association="RestGest.RestauranteMorada" />
         <AssociationConnector Association="RestGest.RestauranteItemMenu" />
         <AssociationConnector Association="RestGest.PedidoItemMenu" />
         <AssociationConnector Association="RestGest.EstadoPedido" />
@@ -30,6 +29,7 @@
         <AssociationConnector Association="RestGest.PedidoPagamento" />
         <AssociationConnector Association="RestGest.PagamentoMetodoPagamento" />
         <AssociationConnector Association="RestGest.ItemMenuCategoria" />
+        <AssociationConnector Association="RestGest.MoradaRestaurante" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -16,24 +16,37 @@ namespace RestGest
 
         private void btRegistar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Restaurante registado com sucesso");
-
-            Morada morada = new Morada();
+            Morada restauranteMorada = new Morada();
             Restaurante restaurante = new Restaurante();
-            Morada moradaRestaurante = new Morada();
-        
-            container.Restaurantes.Add(restaurante);
-            container.SaveChanges();
 
+            restauranteMorada.Cidade = tbCidade.Text;
+            restauranteMorada.Rua = tbRua.Text;
+            restauranteMorada.CodPostal = tbCodPostal.Text;
+            restauranteMorada.Pais = tbPais.Text;
+            
+            container.Moradas.Add(restauranteMorada);
+            restaurante.Nome = tbNome.Text;
+            restaurante.Morada = restauranteMorada;
+            container.Restaurantes.Add(restaurante);
+
+             container.SaveChanges();
 
             MessageBox.Show("Restaurante registado com sucesso");
-
         }
 
         private void btSair_Click(object sender, EventArgs e)
         {
             this.Close();
             new FormGlobalRestaurantes().Show();
+        }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            tbCidade.Clear();
+            tbCodPostal.Clear();
+            tbRua.Clear();
+            tbNome.Clear();
+            tbPais.Clear();
         }
     }
 }
