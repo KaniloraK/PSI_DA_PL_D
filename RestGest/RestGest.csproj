@@ -76,6 +76,12 @@
     <Compile Include="FormAddMenu.Designer.cs">
       <DependentUpon>FormAddMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddNovoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddNovoPedido.Designer.cs">
+      <DependentUpon>FormAddNovoPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClientesAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPedidos.Designer.cs">
+      <DependentUpon>FormPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -171,6 +183,9 @@
     <EmbeddedResource Include="FormAddMenu.resx">
       <DependentUpon>FormAddMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddNovoPedido.resx">
+      <DependentUpon>FormAddNovoPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPedidos.resx">
+      <DependentUpon>FormPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
