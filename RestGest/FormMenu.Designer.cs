@@ -31,10 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.butNovoMenu = new System.Windows.Forms.Button();
+            this.butNovoPrato = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.listBoxSelecionarRestaurante = new System.Windows.Forms.ListBox();
             this.labelSelecionarRestaurante = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Foto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,6 +41,7 @@
             this.Preco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.butApagar = new System.Windows.Forms.Button();
             this.butEditar = new System.Windows.Forms.Button();
+            this.comboBoxSelecionarRestaurante = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,16 +56,16 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // butNovoMenu
+            // butNovoPrato
             // 
-            this.butNovoMenu.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butNovoMenu.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butNovoMenu.Location = new System.Drawing.Point(882, 98);
-            this.butNovoMenu.Name = "butNovoMenu";
-            this.butNovoMenu.Size = new System.Drawing.Size(157, 54);
-            this.butNovoMenu.TabIndex = 11;
-            this.butNovoMenu.Text = "+ Novo Menu";
-            this.butNovoMenu.UseVisualStyleBackColor = false;
+            this.butNovoPrato.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.butNovoPrato.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNovoPrato.Location = new System.Drawing.Point(882, 109);
+            this.butNovoPrato.Name = "butNovoPrato";
+            this.butNovoPrato.Size = new System.Drawing.Size(157, 54);
+            this.butNovoPrato.TabIndex = 11;
+            this.butNovoPrato.Text = "+ Novo Prato";
+            this.butNovoPrato.UseVisualStyleBackColor = false;
             // 
             // contextMenuStrip1
             // 
@@ -83,21 +83,11 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Gestão de Menus";
             // 
-            // listBoxSelecionarRestaurante
-            // 
-            this.listBoxSelecionarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxSelecionarRestaurante.FormattingEnabled = true;
-            this.listBoxSelecionarRestaurante.ItemHeight = 22;
-            this.listBoxSelecionarRestaurante.Location = new System.Drawing.Point(228, 98);
-            this.listBoxSelecionarRestaurante.Name = "listBoxSelecionarRestaurante";
-            this.listBoxSelecionarRestaurante.Size = new System.Drawing.Size(284, 26);
-            this.listBoxSelecionarRestaurante.TabIndex = 14;
-            // 
             // labelSelecionarRestaurante
             // 
             this.labelSelecionarRestaurante.AutoSize = true;
             this.labelSelecionarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSelecionarRestaurante.Location = new System.Drawing.Point(225, 66);
+            this.labelSelecionarRestaurante.Location = new System.Drawing.Point(211, 97);
             this.labelSelecionarRestaurante.Name = "labelSelecionarRestaurante";
             this.labelSelecionarRestaurante.Size = new System.Drawing.Size(211, 20);
             this.labelSelecionarRestaurante.TabIndex = 15;
@@ -152,23 +142,33 @@
             this.butEditar.Text = "Editar";
             this.butEditar.UseVisualStyleBackColor = false;
             // 
+            // comboBoxSelecionarRestaurante
+            // 
+            this.comboBoxSelecionarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSelecionarRestaurante.FormattingEnabled = true;
+            this.comboBoxSelecionarRestaurante.ItemHeight = 25;
+            this.comboBoxSelecionarRestaurante.Location = new System.Drawing.Point(215, 130);
+            this.comboBoxSelecionarRestaurante.Name = "comboBoxSelecionarRestaurante";
+            this.comboBoxSelecionarRestaurante.Size = new System.Drawing.Size(399, 33);
+            this.comboBoxSelecionarRestaurante.TabIndex = 20;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.comboBoxSelecionarRestaurante);
             this.Controls.Add(this.butEditar);
             this.Controls.Add(this.butApagar);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.labelSelecionarRestaurante);
-            this.Controls.Add(this.listBoxSelecionarRestaurante);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.butNovoMenu);
+            this.Controls.Add(this.butNovoPrato);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenu";
-            this.Text = "FormMenu";
+            this.Text = "Gestão de Menus";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,10 +178,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button butNovoMenu;
+        private System.Windows.Forms.Button butNovoPrato;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBoxSelecionarRestaurante;
         private System.Windows.Forms.Label labelSelecionarRestaurante;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader Foto;
@@ -189,5 +188,6 @@
         private System.Windows.Forms.ColumnHeader Preco;
         private System.Windows.Forms.Button butApagar;
         private System.Windows.Forms.Button butEditar;
+        private System.Windows.Forms.ComboBox comboBoxSelecionarRestaurante;
     }
 }
