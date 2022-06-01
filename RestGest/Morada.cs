@@ -14,9 +14,6 @@ namespace RestGest
     
     public partial class Morada
     {
-        
-
-      
         public int Id { get; set; }
         public string Rua { get; set; }
         public string Cidade { get; set; }

@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/11/2022 21:52:51
--- Generated from EDMX file: C:\Users\ruben\source\repos\DA_Proejto\PSI_DA_PL_D\RestGest\Model1.edmx
+-- Date Created: 06/01/2022 21:57:42
+-- Generated from EDMX file: C:\Users\mende\OneDrive\Documentos\projeto DA\PSI_DA_PL_D\RestGest\Model1.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -328,21 +328,6 @@ ON [dbo].[Pessoas]
     ([Morada_Id]);
 GO
 
--- Creating foreign key on [Morada_Id] in table 'Restaurantes'
-ALTER TABLE [dbo].[Restaurantes]
-ADD CONSTRAINT [FK_RestauranteMorada]
-    FOREIGN KEY ([Morada_Id])
-    REFERENCES [dbo].[Moradas]
-        ([Id])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
-GO
-
--- Creating non-clustered index for FOREIGN KEY 'FK_RestauranteMorada'
-CREATE INDEX [IX_FK_RestauranteMorada]
-ON [dbo].[Restaurantes]
-    ([Morada_Id]);
-GO
-
 -- Creating foreign key on [Restaurantes_Id] in table 'RestauranteItemMenu'
 ALTER TABLE [dbo].[RestauranteItemMenu]
 ADD CONSTRAINT [FK_RestauranteItemMenu_Restaurante]
@@ -509,6 +494,21 @@ GO
 CREATE INDEX [IX_FK_ItemMenuCategoria]
 ON [dbo].[ItemMenus]
     ([CategoriaId]);
+GO
+
+-- Creating foreign key on [Morada_Id] in table 'Restaurantes'
+ALTER TABLE [dbo].[Restaurantes]
+ADD CONSTRAINT [FK_MoradaRestaurante]
+    FOREIGN KEY ([Morada_Id])
+    REFERENCES [dbo].[Moradas]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_MoradaRestaurante'
+CREATE INDEX [IX_FK_MoradaRestaurante]
+ON [dbo].[Restaurantes]
+    ([Morada_Id]);
 GO
 
 -- Creating foreign key on [Id] in table 'Pessoas_Trabalhador'
