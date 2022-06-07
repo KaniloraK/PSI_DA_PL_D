@@ -49,11 +49,11 @@ namespace RestGest
         }
 
         private void cbRestauranteAAlterar_DropDown(object sender, EventArgs e)
-        {
+        { 
             Morada restauranteMorada = new Morada();
             Restaurante restaurante = new Restaurante();
 
-            cbRestauranteAAlterar.Items.Add(container.Moradas);
+            cbRestauranteAAlterar.Items.Add(container.Restaurantes);
         }
     }
 }

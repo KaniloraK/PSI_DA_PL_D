@@ -138,6 +138,7 @@
             this.btSairRestauranteIndividual.TabIndex = 11;
             this.btSairRestauranteIndividual.Text = "Sair";
             this.btSairRestauranteIndividual.UseVisualStyleBackColor = false;
+            this.btSairRestauranteIndividual.Click += new System.EventHandler(this.btSairRestauranteIndividual_Click);
             // 
             // FormRestauranteIndividual
             // 

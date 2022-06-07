@@ -22,5 +22,11 @@ namespace RestGest
             new AlterarRestaurante().Show();
             this.Hide();
         }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FormPrincipal().Show();
+        }
     }
 }

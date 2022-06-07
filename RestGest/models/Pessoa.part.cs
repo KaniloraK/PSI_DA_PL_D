@@ -8,5 +8,19 @@ namespace RestGest.models
 {
     public partial class Pessoa
     {
+        public string nome;
+        public string telemovel;
+
+        public Pessoa(string nome, string telemovel)
+        {
+            this.nome = nome;
+            this.telemovel = telemovel;
+        }
+
+        public override string ToString()
+        {
+            return $"{nome} | {telemovel}";
+
+        }
     }
 }

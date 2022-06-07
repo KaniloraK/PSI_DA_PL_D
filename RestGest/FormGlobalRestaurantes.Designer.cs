@@ -34,6 +34,7 @@
             this.btAbrirMenu = new System.Windows.Forms.Button();
             this.btAlterarRestaurante = new System.Windows.Forms.Button();
             this.lbMétodosPagamento = new System.Windows.Forms.ListBox();
+            this.btSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,11 +100,25 @@
             this.lbMétodosPagamento.Size = new System.Drawing.Size(473, 196);
             this.lbMétodosPagamento.TabIndex = 4;
             // 
+            // btSair
+            // 
+            this.btSair.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.Location = new System.Drawing.Point(961, 568);
+            this.btSair.Margin = new System.Windows.Forms.Padding(4);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(117, 48);
+            this.btSair.TabIndex = 5;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            // 
             // FormGlobalRestaurantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 629);
+            this.Controls.Add(this.btSair);
             this.Controls.Add(this.lbMétodosPagamento);
             this.Controls.Add(this.btAlterarRestaurante);
             this.Controls.Add(this.btAbrirMenu);
@@ -125,5 +140,6 @@
         private System.Windows.Forms.Button btAbrirMenu;
         private System.Windows.Forms.Button btAlterarRestaurante;
         private System.Windows.Forms.ListBox lbMétodosPagamento;
+        private System.Windows.Forms.Button btSair;
     }
 }

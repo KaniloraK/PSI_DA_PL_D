@@ -16,7 +16,7 @@ namespace RestGest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGlobalRestaurantes());
+            Application.Run(new FormPrincipal());
         }
     }
 }

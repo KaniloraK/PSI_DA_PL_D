@@ -16,5 +16,11 @@ namespace RestGest
         {
             InitializeComponent();
         }
+
+        private void btSairRestauranteIndividual_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FormPrincipal().Show();
+        }
     }
 }

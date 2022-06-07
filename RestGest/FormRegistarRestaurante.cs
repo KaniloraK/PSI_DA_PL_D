@@ -5,7 +5,7 @@ namespace RestGest
 {
     public partial class FormRegistarRestaurante : Form
     {
-        RestGestContainer container;
+        RestGestContainer container;  
        
         public FormRegistarRestaurante()
         {
@@ -16,6 +16,7 @@ namespace RestGest
 
         private void btRegistar_Click(object sender, EventArgs e)
         {
+            //Registar Restaurante e uma morada na base de dados 
             Morada restauranteMorada = new Morada();
             Restaurante restaurante = new Restaurante();
 
