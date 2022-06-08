@@ -49,5 +49,11 @@ namespace RestGest
             tbNome.Clear();
             tbPais.Clear();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FormPrincipal().Show();
+        }
     }
 }

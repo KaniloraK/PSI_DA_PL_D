@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlterarRestaurante));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbRestauranteAAlterar = new System.Windows.Forms.ComboBox();
-            this.tbNome = new System.Windows.Forms.TextBox();
             this.tbRua = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbPais = new System.Windows.Forms.TextBox();
@@ -46,8 +46,16 @@
             this.btAlterarRestaurante = new System.Windows.Forms.Button();
             this.btSairMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.restGestDBDataSet = new RestGest.RestGestDBDataSet();
+            this.restaurantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restaurantesTableAdapter = new RestGest.RestGestDBDataSetTableAdapters.RestaurantesTableAdapter();
+            this.tbNome = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurantesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,15 +106,7 @@
             this.cbRestauranteAAlterar.Name = "cbRestauranteAAlterar";
             this.cbRestauranteAAlterar.Size = new System.Drawing.Size(293, 24);
             this.cbRestauranteAAlterar.TabIndex = 4;
-            this.cbRestauranteAAlterar.DropDown += new System.EventHandler(this.cbRestauranteAAlterar_DropDown);
-            // 
-            // tbNome
-            // 
-            this.tbNome.Location = new System.Drawing.Point(179, 143);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(241, 22);
-            this.tbNome.TabIndex = 5;
+            this.cbRestauranteAAlterar.SelectedIndexChanged += new System.EventHandler(this.cbRestauranteAAlterar_SelectedIndexChanged);
             // 
             // tbRua
             // 
@@ -118,6 +118,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.tbNome);
             this.groupBox1.Controls.Add(this.tbPais);
             this.groupBox1.Controls.Add(this.tbCidade);
             this.groupBox1.Controls.Add(this.tbCodPostal);
@@ -127,7 +128,6 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbRua);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.tbNome);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cbRestauranteAAlterar);
             this.groupBox1.Location = new System.Drawing.Point(195, 138);
@@ -228,11 +228,45 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(984, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 37);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // restGestDBDataSet
+            // 
+            this.restGestDBDataSet.DataSetName = "RestGestDBDataSet";
+            this.restGestDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // restaurantesBindingSource
+            // 
+            this.restaurantesBindingSource.DataMember = "Restaurantes";
+            this.restaurantesBindingSource.DataSource = this.restGestDBDataSet;
+            // 
+            // restaurantesTableAdapter
+            // 
+            this.restaurantesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbNome
+            // 
+            this.tbNome.Location = new System.Drawing.Point(179, 135);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(241, 22);
+            this.tbNome.TabIndex = 15;
+            // 
             // AlterarRestaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1059, 626);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btSairMenu);
             this.Controls.Add(this.btAlterarRestaurante);
@@ -242,9 +276,13 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AlterarRestaurante";
             this.Text = "AlterarRestaurante";
+            this.Load += new System.EventHandler(this.AlterarRestaurante_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restaurantesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,7 +295,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbRestauranteAAlterar;
-        private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.TextBox tbRua;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btAlterarRestaurante;
@@ -269,5 +306,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private RestGestDBDataSet restGestDBDataSet;
+        private System.Windows.Forms.BindingSource restaurantesBindingSource;
+        private RestGestDBDataSetTableAdapters.RestaurantesTableAdapter restaurantesTableAdapter;
+        private System.Windows.Forms.TextBox tbNome;
     }
 }

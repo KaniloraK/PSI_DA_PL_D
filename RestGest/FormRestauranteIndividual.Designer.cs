@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btSairRestauranteIndividual = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,19 +133,31 @@
             // 
             this.btSairRestauranteIndividual.BackColor = System.Drawing.Color.DarkTurquoise;
             this.btSairRestauranteIndividual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSairRestauranteIndividual.Location = new System.Drawing.Point(32, 575);
+            this.btSairRestauranteIndividual.Location = new System.Drawing.Point(32, 592);
             this.btSairRestauranteIndividual.Name = "btSairRestauranteIndividual";
-            this.btSairRestauranteIndividual.Size = new System.Drawing.Size(158, 62);
+            this.btSairRestauranteIndividual.Size = new System.Drawing.Size(109, 45);
             this.btSairRestauranteIndividual.TabIndex = 11;
             this.btSairRestauranteIndividual.Text = "Sair";
             this.btSairRestauranteIndividual.UseVisualStyleBackColor = false;
             this.btSairRestauranteIndividual.Click += new System.EventHandler(this.btSairRestauranteIndividual_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(32, 461);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(210, 51);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Registar Trabalhador";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormRestauranteIndividual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 649);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btSairRestauranteIndividual);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbPedidos);
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btSairRestauranteIndividual;
+        private System.Windows.Forms.Button button1;
     }
 }

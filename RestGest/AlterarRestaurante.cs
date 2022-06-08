@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RestGest
@@ -13,12 +8,16 @@ namespace RestGest
     public partial class AlterarRestaurante : Form
     {
         RestGestContainer container;
-       
+        List<Restaurante> restaurantes = null;
+        Restaurante restauranteSelecionado = null;
+
+
+
         public AlterarRestaurante()
         {
             InitializeComponent();
             container = new RestGestContainer();
-     
+
         }
 
         private void btSairMenu_Click(object sender, EventArgs e)
@@ -28,32 +27,63 @@ namespace RestGest
 
         }
 
-     
+
 
         private void btAlterarRestaurante_Click(object sender, EventArgs e)
         {
-            Morada restauranteMorada = new Morada();
-            Restaurante restaurante = new Restaurante();
 
-            restauranteMorada.Cidade = tbCidade.Text;
-            restauranteMorada.Rua = tbRua.Text;
-            restauranteMorada.CodPostal = tbCodPostal.Text;
-            restauranteMorada.Pais = tbPais.Text;
 
-            container.Moradas.Add(restauranteMorada);
-            restaurante.Nome = tbNome.Text;
-            restaurante.Morada = restauranteMorada;
-            container.Restaurantes.Add(restaurante);
 
-            container.SaveChanges();
+
+            //MessageBox.Show("Restaurante Alterado com sucesso");
+
         }
 
-        private void cbRestauranteAAlterar_DropDown(object sender, EventArgs e)
-        { 
-            Morada restauranteMorada = new Morada();
-            Restaurante restaurante = new Restaurante();
+        private void AlterarRestaurante_Load(object sender, EventArgs e)
+        {
+            restaurantes = container.Restaurantes.ToList();
 
-            cbRestauranteAAlterar.Items.Add(container.Restaurantes);
+            cbRestauranteAAlterar.DisplayMember = "Nome";
+            cbRestauranteAAlterar.ValueMember = "Id";
+            cbRestauranteAAlterar.DataSource = restaurantes;
+
+            /*
+            tbNome.Text = restaurantes[0].Nome;
+            tbCodPostal.Text = moradas[0].CodPostal;
+            tbPais.Text = moradas[0].Pais;
+            tbCidade.Text = moradas[0].Cidade;
+            tbRua.Text = moradas[0].Rua;
+           */
+
+           
+
+
+            //container.SaveChanges();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new FormPrincipal().Show();
+        }
+
+        private void cbRestauranteAAlterar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+         
+                    
+        
+                
+                /*
+                tbNome.Text = restaurantes.Nome;
+                tbCodPostal.Text = moradas.CodPostal;
+                tbPais.Text = moradas.Pais;
+                tbCidade.Text = moradas.Cidade;
+                tbRua.Text = moradas.Rua;
+                */
+            
         }
     }
 }
