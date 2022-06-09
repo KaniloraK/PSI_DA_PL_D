@@ -28,10 +28,20 @@ namespace RestGest
         }
 
 
-
         private void btAlterarRestaurante_Click(object sender, EventArgs e)
         {
+           
 
+            restauranteSelecionado.Morada.Cidade = tbCidade.Text;
+            restauranteSelecionado.Morada.Rua = tbRua.Text;
+            restauranteSelecionado.Morada.CodPostal = tbCodPostal.Text;
+            restauranteSelecionado.Morada.Pais = tbPais.Text;
+
+            restauranteSelecionado.Nome = tbNome.Text;
+
+            container.SaveChanges();
+
+            MessageBox.Show("Restaurante registado com sucesso");
 
 
 
@@ -43,8 +53,8 @@ namespace RestGest
         {
             restaurantes = container.Restaurantes.ToList();
 
+            cbRestauranteAAlterar.DataSource = null;
             cbRestauranteAAlterar.DisplayMember = "Nome";
-            cbRestauranteAAlterar.ValueMember = "Id";
             cbRestauranteAAlterar.DataSource = restaurantes;
 
             /*
@@ -70,11 +80,18 @@ namespace RestGest
 
         private void cbRestauranteAAlterar_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int selectedIndex = cbRestauranteAAlterar.SelectedIndex;    
 
+            if (cbRestauranteAAlterar.Items.Count != -1)
+            {
+                restauranteSelecionado = restaurantes[selectedIndex];
+                tbNome.Text = restauranteSelecionado.Nome;
+                tbCodPostal.Text = restauranteSelecionado.Morada.CodPostal;
+                tbCidade.Text = restauranteSelecionado.Morada.Cidade;
+                tbPais.Text = restauranteSelecionado.Morada.Pais;
+                tbRua.Text = restauranteSelecionado.Morada.Rua;
+            }
 
-         
-                    
-        
                 
                 /*
                 tbNome.Text = restaurantes.Nome;
@@ -85,5 +102,6 @@ namespace RestGest
                 */
             
         }
+
     }
 }
