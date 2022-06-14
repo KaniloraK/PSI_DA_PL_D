@@ -35,18 +35,18 @@
             this.labelGestaoPedidos = new System.Windows.Forms.Label();
             this.butNovoPedido = new System.Windows.Forms.Button();
             this.listViewGestaoPedidos = new System.Windows.Forms.ListView();
-            this.butEditarPedido = new System.Windows.Forms.Button();
-            this.butExportarTXT = new System.Windows.Forms.Button();
-            this.butExportarPDF = new System.Windows.Forms.Button();
-            this.butConsultarPedidosTerminados = new System.Windows.Forms.Button();
             this.IdPedido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.NomeFuncionario = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ValorTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MeioPagamento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.butEditarPedido = new System.Windows.Forms.Button();
+            this.butExportarTXT = new System.Windows.Forms.Button();
+            this.butExportarPDF = new System.Windows.Forms.Button();
+            this.butConsultarPedidosTerminados = new System.Windows.Forms.Button();
+            this.goHome = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goHome)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -99,6 +99,7 @@
             this.butNovoPedido.TabIndex = 19;
             this.butNovoPedido.Text = "Novo Pedido";
             this.butNovoPedido.UseVisualStyleBackColor = false;
+            this.butNovoPedido.Click += new System.EventHandler(this.butNovoPedido_Click);
             // 
             // listViewGestaoPedidos
             // 
@@ -114,6 +115,26 @@
             this.listViewGestaoPedidos.Size = new System.Drawing.Size(1027, 289);
             this.listViewGestaoPedidos.TabIndex = 20;
             this.listViewGestaoPedidos.UseCompatibleStateImageBehavior = false;
+            // 
+            // IdPedido
+            // 
+            this.IdPedido.Text = "Nr Pedido";
+            // 
+            // NomeFuncionario
+            // 
+            this.NomeFuncionario.Text = "Funcionário";
+            // 
+            // Estado
+            // 
+            this.Estado.Text = "Estado";
+            // 
+            // ValorTotal
+            // 
+            this.ValorTotal.Text = "Valor Total";
+            // 
+            // MeioPagamento
+            // 
+            this.MeioPagamento.Text = "MeioPagamento";
             // 
             // butEditarPedido
             // 
@@ -159,42 +180,23 @@
             this.butConsultarPedidosTerminados.Text = "Ver Pedidos Concluídos";
             this.butConsultarPedidosTerminados.UseVisualStyleBackColor = false;
             // 
-            // IdPedido
+            // goHome
             // 
-            this.IdPedido.Text = "Nr Pedido";
-            // 
-            // NomeFuncionario
-            // 
-            this.NomeFuncionario.Text = "Funcionário";
-            // 
-            // Estado
-            // 
-            this.Estado.Text = "Estado";
-            // 
-            // ValorTotal
-            // 
-            this.ValorTotal.Text = "Valor Total";
-            // 
-            // MeioPagamento
-            // 
-            this.MeioPagamento.Text = "MeioPagamento";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(984, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.goHome.Image = ((System.Drawing.Image)(resources.GetObject("goHome.Image")));
+            this.goHome.Location = new System.Drawing.Point(984, 16);
+            this.goHome.Name = "goHome";
+            this.goHome.Size = new System.Drawing.Size(46, 37);
+            this.goHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.goHome.TabIndex = 25;
+            this.goHome.TabStop = false;
+            this.goHome.Click += new System.EventHandler(this.goHome_Click);
             // 
             // FormPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.goHome);
             this.Controls.Add(this.butConsultarPedidosTerminados);
             this.Controls.Add(this.butExportarPDF);
             this.Controls.Add(this.butEditarPedido);
@@ -209,8 +211,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPedidos";
             this.Text = "Gestão de Pedidos";
+            this.Load += new System.EventHandler(this.FormPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,6 +236,6 @@
         private System.Windows.Forms.ColumnHeader Estado;
         private System.Windows.Forms.ColumnHeader ValorTotal;
         private System.Windows.Forms.ColumnHeader MeioPagamento;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox goHome;
     }
 }

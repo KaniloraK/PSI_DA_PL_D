@@ -16,5 +16,16 @@ namespace RestGest
         {
             InitializeComponent();
         }
+
+        private void GoHome_Click(object sender, EventArgs e)
+        {
+            new FormPrincipal().Show();
+            this.Close();
+        }
+
+        private void FormAddNovoPedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

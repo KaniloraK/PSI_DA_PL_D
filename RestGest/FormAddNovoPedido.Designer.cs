@@ -38,15 +38,15 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelClienteTotal = new System.Windows.Forms.Label();
             this.groupBoxAdicionarItem = new System.Windows.Forms.GroupBox();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.labelCategoriaItem = new System.Windows.Forms.Label();
+            this.listBoxAdicionarItemAoPedido = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxItensJaAdicionados = new System.Windows.Forms.GroupBox();
+            this.listBoxItensJaPedidos = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.butAdicionarAoPedido = new System.Windows.Forms.Button();
             this.butRemoverDoPedido = new System.Windows.Forms.Button();
-            this.listBoxAdicionarItemAoPedido = new System.Windows.Forms.ListBox();
-            this.listBoxItensJaPedidos = new System.Windows.Forms.ListBox();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.labelCategoriaItem = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.butSairPedido = new System.Windows.Forms.Button();
             this.butGuardarPedido = new System.Windows.Forms.Button();
@@ -148,6 +148,34 @@
             this.groupBoxAdicionarItem.TabStop = false;
             this.groupBoxAdicionarItem.Text = "Adicionar Item:";
             // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Location = new System.Drawing.Point(21, 41);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(377, 28);
+            this.comboBoxCategoria.TabIndex = 36;
+            // 
+            // labelCategoriaItem
+            // 
+            this.labelCategoriaItem.AutoSize = true;
+            this.labelCategoriaItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoriaItem.Location = new System.Drawing.Point(21, 18);
+            this.labelCategoriaItem.Name = "labelCategoriaItem";
+            this.labelCategoriaItem.Size = new System.Drawing.Size(164, 20);
+            this.labelCategoriaItem.TabIndex = 35;
+            this.labelCategoriaItem.Text = "Selecione Categoria:";
+            // 
+            // listBoxAdicionarItemAoPedido
+            // 
+            this.listBoxAdicionarItemAoPedido.FormattingEnabled = true;
+            this.listBoxAdicionarItemAoPedido.ItemHeight = 16;
+            this.listBoxAdicionarItemAoPedido.Location = new System.Drawing.Point(21, 73);
+            this.listBoxAdicionarItemAoPedido.Name = "listBoxAdicionarItemAoPedido";
+            this.listBoxAdicionarItemAoPedido.Size = new System.Drawing.Size(377, 196);
+            this.listBoxAdicionarItemAoPedido.TabIndex = 31;
+            // 
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(593, -1);
@@ -167,6 +195,15 @@
             this.groupBoxItensJaAdicionados.TabIndex = 31;
             this.groupBoxItensJaAdicionados.TabStop = false;
             this.groupBoxItensJaAdicionados.Text = "Itens Já Adicionados:";
+            // 
+            // listBoxItensJaPedidos
+            // 
+            this.listBoxItensJaPedidos.FormattingEnabled = true;
+            this.listBoxItensJaPedidos.ItemHeight = 16;
+            this.listBoxItensJaPedidos.Location = new System.Drawing.Point(23, 41);
+            this.listBoxItensJaPedidos.Name = "listBoxItensJaPedidos";
+            this.listBoxItensJaPedidos.Size = new System.Drawing.Size(377, 228);
+            this.listBoxItensJaPedidos.TabIndex = 32;
             // 
             // groupBox3
             // 
@@ -199,43 +236,6 @@
             this.butRemoverDoPedido.Text = "<<<";
             this.butRemoverDoPedido.UseVisualStyleBackColor = false;
             // 
-            // listBoxAdicionarItemAoPedido
-            // 
-            this.listBoxAdicionarItemAoPedido.FormattingEnabled = true;
-            this.listBoxAdicionarItemAoPedido.ItemHeight = 16;
-            this.listBoxAdicionarItemAoPedido.Location = new System.Drawing.Point(21, 73);
-            this.listBoxAdicionarItemAoPedido.Name = "listBoxAdicionarItemAoPedido";
-            this.listBoxAdicionarItemAoPedido.Size = new System.Drawing.Size(377, 196);
-            this.listBoxAdicionarItemAoPedido.TabIndex = 31;
-            // 
-            // listBoxItensJaPedidos
-            // 
-            this.listBoxItensJaPedidos.FormattingEnabled = true;
-            this.listBoxItensJaPedidos.ItemHeight = 16;
-            this.listBoxItensJaPedidos.Location = new System.Drawing.Point(23, 41);
-            this.listBoxItensJaPedidos.Name = "listBoxItensJaPedidos";
-            this.listBoxItensJaPedidos.Size = new System.Drawing.Size(377, 228);
-            this.listBoxItensJaPedidos.TabIndex = 32;
-            // 
-            // comboBoxCategoria
-            // 
-            this.comboBoxCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Location = new System.Drawing.Point(21, 41);
-            this.comboBoxCategoria.Name = "comboBoxCategoria";
-            this.comboBoxCategoria.Size = new System.Drawing.Size(377, 28);
-            this.comboBoxCategoria.TabIndex = 36;
-            // 
-            // labelCategoriaItem
-            // 
-            this.labelCategoriaItem.AutoSize = true;
-            this.labelCategoriaItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCategoriaItem.Location = new System.Drawing.Point(21, 18);
-            this.labelCategoriaItem.Name = "labelCategoriaItem";
-            this.labelCategoriaItem.Size = new System.Drawing.Size(164, 20);
-            this.labelCategoriaItem.TabIndex = 35;
-            this.labelCategoriaItem.Text = "Selecione Categoria:";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -245,6 +245,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.GoHome_Click);
             // 
             // butSairPedido
             // 
@@ -291,6 +292,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAddNovoPedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.FormAddNovoPedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.groupBoxAdicionarItem.ResumeLayout(false);
             this.groupBoxAdicionarItem.PerformLayout();
