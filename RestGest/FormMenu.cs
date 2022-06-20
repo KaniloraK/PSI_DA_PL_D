@@ -16,5 +16,12 @@ namespace RestGest
         {
             InitializeComponent();
         }
+
+        private void goHome_Click(object sender, EventArgs e)
+        {
+                new FormPrincipal().Show();
+                this.Hide();
+            
+        }
     }
 }

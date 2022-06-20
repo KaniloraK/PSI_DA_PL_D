@@ -20,37 +20,40 @@ namespace RestGest
         private void btGestaoGlobal_Click(object sender, EventArgs e)
         {
             new FormGlobalRestaurantes().Show();
-            this.WindowState = FormWindowState.Minimized;
-
+            this.Hide(); 
         }
 
         private void btGestaoIndividual_Click(object sender, EventArgs e)
         {
            new FormRestauranteIndividual().Show();
-            this.WindowState = FormWindowState.Minimized;
+           this.Hide();
         }
 
         private void btGestaoClientes_Click(object sender, EventArgs e)
         {
             new FormClientes().Show();
-            this.WindowState = FormWindowState.Minimized;
+            this.Hide();
         }
 
         private void btMenus_Click(object sender, EventArgs e)
         {
             new FormMenu().Show();
-            this.WindowState = FormWindowState.Minimized;
+            this.Hide();
         }
 
         private void Pedidos_Click(object sender, EventArgs e)
         {
             new FormPedidos().Show();
-            this.WindowState = FormWindowState.Minimized;
+            this.Hide();
         }
 
         private void btSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult sair = MessageBox.Show("Deseja sair?","Terminar Programa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (sair == DialogResult.Yes)
+            { this.Close();
+            }
+         
         }
     }
 }

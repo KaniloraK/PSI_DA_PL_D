@@ -21,5 +21,12 @@ namespace RestGest
         {
 
         }
+
+        private void goHome_Click(object sender, EventArgs e)
+        {
+                new FormPrincipal().Show();
+                this.Close();
+            }
+        }
     }
-}
+
