@@ -179,8 +179,9 @@
             // 
             // butGuardar
             // 
-            this.butGuardar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butGuardar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butGuardar.BackColor = System.Drawing.Color.SlateGray;
+            this.butGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butGuardar.ForeColor = System.Drawing.SystemColors.Control;
             this.butGuardar.Location = new System.Drawing.Point(550, 445);
             this.butGuardar.Name = "butGuardar";
             this.butGuardar.Size = new System.Drawing.Size(157, 54);
@@ -190,8 +191,9 @@
             // 
             // butSair
             // 
-            this.butSair.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butSair.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSair.BackColor = System.Drawing.Color.SlateGray;
+            this.butSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSair.ForeColor = System.Drawing.SystemColors.Control;
             this.butSair.Location = new System.Drawing.Point(768, 445);
             this.butSair.Name = "butSair";
             this.butSair.Size = new System.Drawing.Size(157, 54);

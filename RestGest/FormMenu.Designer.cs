@@ -60,8 +60,9 @@
             // 
             // butNovoPrato
             // 
-            this.butNovoPrato.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butNovoPrato.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNovoPrato.BackColor = System.Drawing.Color.SlateGray;
+            this.butNovoPrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNovoPrato.ForeColor = System.Drawing.SystemColors.Control;
             this.butNovoPrato.Location = new System.Drawing.Point(882, 109);
             this.butNovoPrato.Name = "butNovoPrato";
             this.butNovoPrato.Size = new System.Drawing.Size(157, 54);
@@ -124,8 +125,9 @@
             // 
             // butApagar
             // 
-            this.butApagar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butApagar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butApagar.BackColor = System.Drawing.Color.SlateGray;
+            this.butApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butApagar.ForeColor = System.Drawing.SystemColors.Control;
             this.butApagar.Location = new System.Drawing.Point(920, 458);
             this.butApagar.Name = "butApagar";
             this.butApagar.Size = new System.Drawing.Size(119, 38);
@@ -135,8 +137,9 @@
             // 
             // butEditar
             // 
-            this.butEditar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butEditar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butEditar.BackColor = System.Drawing.Color.SlateGray;
+            this.butEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butEditar.ForeColor = System.Drawing.SystemColors.Control;
             this.butEditar.Location = new System.Drawing.Point(795, 458);
             this.butEditar.Name = "butEditar";
             this.butEditar.Size = new System.Drawing.Size(119, 38);

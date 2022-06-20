@@ -60,7 +60,7 @@
             this.label1.Location = new System.Drawing.Point(400, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 31);
+            this.label1.Size = new System.Drawing.Size(297, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registar Restaurante";
             // 
@@ -80,7 +80,7 @@
             this.label4.Location = new System.Drawing.Point(17, 88);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 25);
+            this.label4.Size = new System.Drawing.Size(100, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cidade:";
             // 
@@ -108,14 +108,15 @@
             this.label5.Location = new System.Drawing.Point(17, 41);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 25);
+            this.label5.Size = new System.Drawing.Size(88, 29);
             this.label5.TabIndex = 6;
             this.label5.Text = "Nome:";
             // 
             // btRegistar
             // 
-            this.btRegistar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btRegistar.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRegistar.BackColor = System.Drawing.Color.SlateGray;
+            this.btRegistar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRegistar.ForeColor = System.Drawing.SystemColors.Control;
             this.btRegistar.Location = new System.Drawing.Point(628, 454);
             this.btRegistar.Margin = new System.Windows.Forms.Padding(4);
             this.btRegistar.Name = "btRegistar";
@@ -127,7 +128,9 @@
             // 
             // btSair
             // 
-            this.btSair.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btSair.BackColor = System.Drawing.Color.SlateGray;
+            this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.ForeColor = System.Drawing.SystemColors.Control;
             this.btSair.Location = new System.Drawing.Point(852, 454);
             this.btSair.Margin = new System.Windows.Forms.Padding(4);
             this.btSair.Name = "btSair";
@@ -199,7 +202,7 @@
             this.label7.Location = new System.Drawing.Point(17, 221);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 25);
+            this.label7.Size = new System.Drawing.Size(66, 29);
             this.label7.TabIndex = 9;
             this.label7.Text = "Rua:";
             // 
@@ -210,7 +213,7 @@
             this.label6.Location = new System.Drawing.Point(7, 178);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 25);
+            this.label6.Size = new System.Drawing.Size(178, 29);
             this.label6.TabIndex = 8;
             this.label6.Text = "Código Postal:";
             // 
@@ -221,14 +224,15 @@
             this.label3.Location = new System.Drawing.Point(17, 132);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.Size = new System.Drawing.Size(70, 29);
             this.label3.TabIndex = 7;
             this.label3.Text = "País:";
             // 
             // btLimpar
             // 
-            this.btLimpar.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btLimpar.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLimpar.BackColor = System.Drawing.Color.SlateGray;
+            this.btLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLimpar.ForeColor = System.Drawing.SystemColors.Control;
             this.btLimpar.Location = new System.Drawing.Point(161, 454);
             this.btLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btLimpar.Name = "btLimpar";

@@ -131,8 +131,9 @@
             // 
             // btSairRestauranteIndividual
             // 
-            this.btSairRestauranteIndividual.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btSairRestauranteIndividual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSairRestauranteIndividual.BackColor = System.Drawing.Color.SlateGray;
+            this.btSairRestauranteIndividual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSairRestauranteIndividual.ForeColor = System.Drawing.SystemColors.Control;
             this.btSairRestauranteIndividual.Location = new System.Drawing.Point(32, 592);
             this.btSairRestauranteIndividual.Name = "btSairRestauranteIndividual";
             this.btSairRestauranteIndividual.Size = new System.Drawing.Size(109, 45);
@@ -143,8 +144,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.SlateGray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(32, 461);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(210, 51);

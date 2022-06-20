@@ -203,7 +203,9 @@
             // 
             // btAlterarRestaurante
             // 
-            this.btAlterarRestaurante.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btAlterarRestaurante.BackColor = System.Drawing.Color.SlateGray;
+            this.btAlterarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btAlterarRestaurante.ForeColor = System.Drawing.SystemColors.Control;
             this.btAlterarRestaurante.Location = new System.Drawing.Point(611, 542);
             this.btAlterarRestaurante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btAlterarRestaurante.Name = "btAlterarRestaurante";
@@ -215,7 +217,9 @@
             // 
             // btSairMenu
             // 
-            this.btSairMenu.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btSairMenu.BackColor = System.Drawing.Color.SlateGray;
+            this.btSairMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSairMenu.ForeColor = System.Drawing.SystemColors.Control;
             this.btSairMenu.Location = new System.Drawing.Point(849, 542);
             this.btSairMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSairMenu.Name = "btSairMenu";

@@ -44,21 +44,21 @@
             this.butConsultarPedidosTerminados = new System.Windows.Forms.Button();
             this.goHome = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.restGestDBDataSet = new RestGest.RestGestDBDataSet();
-            this.pedidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pedidosTableAdapter = new RestGest.RestGestDBDataSetTableAdapters.PedidosTableAdapter();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.restauranteIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trabalhadorIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pedidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restGestDBDataSet = new RestGest.RestGestDBDataSet();
+            this.pedidosTableAdapter = new RestGest.RestGestDBDataSetTableAdapters.PedidosTableAdapter();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -103,8 +103,9 @@
             // 
             // butNovoPedido
             // 
-            this.butNovoPedido.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butNovoPedido.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNovoPedido.BackColor = System.Drawing.Color.SlateGray;
+            this.butNovoPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNovoPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.butNovoPedido.Location = new System.Drawing.Point(886, 109);
             this.butNovoPedido.Name = "butNovoPedido";
             this.butNovoPedido.Size = new System.Drawing.Size(157, 54);
@@ -115,8 +116,9 @@
             // 
             // butEditarPedido
             // 
-            this.butEditarPedido.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butEditarPedido.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butEditarPedido.BackColor = System.Drawing.Color.SlateGray;
+            this.butEditarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butEditarPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.butEditarPedido.Location = new System.Drawing.Point(490, 485);
             this.butEditarPedido.Name = "butEditarPedido";
             this.butEditarPedido.Size = new System.Drawing.Size(119, 38);
@@ -126,8 +128,9 @@
             // 
             // butExportarTXT
             // 
-            this.butExportarTXT.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butExportarTXT.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butExportarTXT.BackColor = System.Drawing.Color.SlateGray;
+            this.butExportarTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butExportarTXT.ForeColor = System.Drawing.SystemColors.Control;
             this.butExportarTXT.Location = new System.Drawing.Point(924, 485);
             this.butExportarTXT.Name = "butExportarTXT";
             this.butExportarTXT.Size = new System.Drawing.Size(119, 38);
@@ -138,8 +141,9 @@
             // 
             // butExportarPDF
             // 
-            this.butExportarPDF.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butExportarPDF.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butExportarPDF.BackColor = System.Drawing.Color.SlateGray;
+            this.butExportarPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butExportarPDF.ForeColor = System.Drawing.SystemColors.Control;
             this.butExportarPDF.Location = new System.Drawing.Point(799, 485);
             this.butExportarPDF.Name = "butExportarPDF";
             this.butExportarPDF.Size = new System.Drawing.Size(119, 38);
@@ -150,8 +154,9 @@
             // 
             // butConsultarPedidosTerminados
             // 
-            this.butConsultarPedidosTerminados.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butConsultarPedidosTerminados.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butConsultarPedidosTerminados.BackColor = System.Drawing.Color.SlateGray;
+            this.butConsultarPedidosTerminados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butConsultarPedidosTerminados.ForeColor = System.Drawing.SystemColors.Control;
             this.butConsultarPedidosTerminados.Location = new System.Drawing.Point(615, 485);
             this.butConsultarPedidosTerminados.Name = "butConsultarPedidosTerminados";
             this.butConsultarPedidosTerminados.Size = new System.Drawing.Size(178, 38);
@@ -214,24 +219,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1018, 267);
             this.dataGridView1.TabIndex = 26;
             // 
-            // restGestDBDataSet
-            // 
-            this.restGestDBDataSet.DataSetName = "RestGestDBDataSet";
-            this.restGestDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pedidosBindingSource
-            // 
-            this.pedidosBindingSource.DataMember = "Pedidos";
-            this.pedidosBindingSource.DataSource = this.restGestDBDataSet;
-            // 
-            // pedidosTableAdapter
-            // 
-            this.pedidosTableAdapter.ClearBeforeFill = true;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -281,6 +268,24 @@
             this.trabalhadorIdDataGridViewTextBoxColumn.Name = "trabalhadorIdDataGridViewTextBoxColumn";
             this.trabalhadorIdDataGridViewTextBoxColumn.Width = 125;
             // 
+            // pedidosBindingSource
+            // 
+            this.pedidosBindingSource.DataMember = "Pedidos";
+            this.pedidosBindingSource.DataSource = this.restGestDBDataSet;
+            // 
+            // restGestDBDataSet
+            // 
+            this.restGestDBDataSet.DataSetName = "RestGestDBDataSet";
+            this.restGestDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pedidosTableAdapter
+            // 
+            this.pedidosTableAdapter.ClearBeforeFill = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // FormPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -305,8 +310,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

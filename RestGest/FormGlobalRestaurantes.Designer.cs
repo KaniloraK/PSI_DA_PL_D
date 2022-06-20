@@ -62,9 +62,10 @@
             // 
             // btAbrirMenu
             // 
-            this.btAbrirMenu.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btAbrirMenu.BackColor = System.Drawing.Color.SlateGray;
             this.btAbrirMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btAbrirMenu.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAbrirMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAbrirMenu.ForeColor = System.Drawing.SystemColors.Control;
             this.btAbrirMenu.Location = new System.Drawing.Point(204, 269);
             this.btAbrirMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btAbrirMenu.Name = "btAbrirMenu";
@@ -76,8 +77,9 @@
             // 
             // btAlterarRestaurante
             // 
-            this.btAlterarRestaurante.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btAlterarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarRestaurante.BackColor = System.Drawing.Color.SlateGray;
+            this.btAlterarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarRestaurante.ForeColor = System.Drawing.SystemColors.Control;
             this.btAlterarRestaurante.Location = new System.Drawing.Point(628, 269);
             this.btAlterarRestaurante.Margin = new System.Windows.Forms.Padding(4);
             this.btAlterarRestaurante.Name = "btAlterarRestaurante";
@@ -102,8 +104,9 @@
             // 
             // btSair
             // 
-            this.btSair.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.BackColor = System.Drawing.Color.SlateGray;
+            this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.ForeColor = System.Drawing.SystemColors.Control;
             this.btSair.Location = new System.Drawing.Point(961, 568);
             this.btSair.Margin = new System.Windows.Forms.Padding(4);
             this.btSair.Name = "btSair";

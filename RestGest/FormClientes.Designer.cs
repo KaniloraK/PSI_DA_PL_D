@@ -66,8 +66,9 @@
             // 
             // btAdicionarCliente
             // 
-            this.btAdicionarCliente.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btAdicionarCliente.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAdicionarCliente.BackColor = System.Drawing.Color.SlateGray;
+            this.btAdicionarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAdicionarCliente.ForeColor = System.Drawing.SystemColors.Control;
             this.btAdicionarCliente.Location = new System.Drawing.Point(484, 524);
             this.btAdicionarCliente.Name = "btAdicionarCliente";
             this.btAdicionarCliente.Size = new System.Drawing.Size(157, 37);
@@ -78,8 +79,9 @@
             // 
             // btAlterarForm
             // 
-            this.btAlterarForm.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btAlterarForm.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarForm.BackColor = System.Drawing.Color.SlateGray;
+            this.btAlterarForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAlterarForm.ForeColor = System.Drawing.SystemColors.Control;
             this.btAlterarForm.Location = new System.Drawing.Point(301, 524);
             this.btAlterarForm.Name = "btAlterarForm";
             this.btAlterarForm.Size = new System.Drawing.Size(157, 36);
@@ -90,9 +92,10 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(980, 527);
+            this.button2.BackColor = System.Drawing.Color.SlateGray;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(980, 524);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 34);
             this.button2.TabIndex = 22;
@@ -272,8 +275,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.SlateGray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(688, 524);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 35);

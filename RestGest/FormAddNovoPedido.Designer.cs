@@ -216,8 +216,9 @@
             // 
             // butAdicionarAoPedido
             // 
-            this.butAdicionarAoPedido.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butAdicionarAoPedido.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butAdicionarAoPedido.BackColor = System.Drawing.Color.SlateGray;
+            this.butAdicionarAoPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butAdicionarAoPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.butAdicionarAoPedido.Location = new System.Drawing.Point(480, 294);
             this.butAdicionarAoPedido.Name = "butAdicionarAoPedido";
             this.butAdicionarAoPedido.Size = new System.Drawing.Size(119, 38);
@@ -227,8 +228,9 @@
             // 
             // butRemoverDoPedido
             // 
-            this.butRemoverDoPedido.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butRemoverDoPedido.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butRemoverDoPedido.BackColor = System.Drawing.Color.SlateGray;
+            this.butRemoverDoPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butRemoverDoPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.butRemoverDoPedido.Location = new System.Drawing.Point(480, 361);
             this.butRemoverDoPedido.Name = "butRemoverDoPedido";
             this.butRemoverDoPedido.Size = new System.Drawing.Size(119, 38);
@@ -249,8 +251,9 @@
             // 
             // butSairPedido
             // 
-            this.butSairPedido.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butSairPedido.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSairPedido.BackColor = System.Drawing.Color.SlateGray;
+            this.butSairPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSairPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.butSairPedido.Location = new System.Drawing.Point(558, 499);
             this.butSairPedido.Name = "butSairPedido";
             this.butSairPedido.Size = new System.Drawing.Size(157, 43);
@@ -260,8 +263,9 @@
             // 
             // butGuardarPedido
             // 
-            this.butGuardarPedido.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.butGuardarPedido.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butGuardarPedido.BackColor = System.Drawing.Color.SlateGray;
+            this.butGuardarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butGuardarPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.butGuardarPedido.Location = new System.Drawing.Point(340, 499);
             this.butGuardarPedido.Name = "butGuardarPedido";
             this.butGuardarPedido.Size = new System.Drawing.Size(157, 43);
