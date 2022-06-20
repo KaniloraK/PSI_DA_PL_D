@@ -28,25 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPedidos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelSelecionarRestaurante = new System.Windows.Forms.Label();
             this.comboBoxSelecionarRestaurante = new System.Windows.Forms.ComboBox();
             this.labelGestaoPedidos = new System.Windows.Forms.Label();
             this.butNovoPedido = new System.Windows.Forms.Button();
-            this.listViewGestaoPedidos = new System.Windows.Forms.ListView();
-            this.IdPedido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.NomeFuncionario = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ValorTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.MeioPagamento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.butEditarPedido = new System.Windows.Forms.Button();
             this.butExportarTXT = new System.Windows.Forms.Button();
             this.butExportarPDF = new System.Windows.Forms.Button();
             this.butConsultarPedidosTerminados = new System.Windows.Forms.Button();
             this.goHome = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.restGestDBDataSet = new RestGest.RestGestDBDataSet();
+            this.pedidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pedidosTableAdapter = new RestGest.RestGestDBDataSetTableAdapters.PedidosTableAdapter();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.restauranteIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trabalhadorIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -101,41 +113,6 @@
             this.butNovoPedido.UseVisualStyleBackColor = false;
             this.butNovoPedido.Click += new System.EventHandler(this.butNovoPedido_Click);
             // 
-            // listViewGestaoPedidos
-            // 
-            this.listViewGestaoPedidos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.IdPedido,
-            this.NomeFuncionario,
-            this.Estado,
-            this.ValorTotal,
-            this.MeioPagamento});
-            this.listViewGestaoPedidos.HideSelection = false;
-            this.listViewGestaoPedidos.Location = new System.Drawing.Point(16, 185);
-            this.listViewGestaoPedidos.Name = "listViewGestaoPedidos";
-            this.listViewGestaoPedidos.Size = new System.Drawing.Size(1027, 289);
-            this.listViewGestaoPedidos.TabIndex = 20;
-            this.listViewGestaoPedidos.UseCompatibleStateImageBehavior = false;
-            // 
-            // IdPedido
-            // 
-            this.IdPedido.Text = "Nr Pedido";
-            // 
-            // NomeFuncionario
-            // 
-            this.NomeFuncionario.Text = "Funcionário";
-            // 
-            // Estado
-            // 
-            this.Estado.Text = "Estado";
-            // 
-            // ValorTotal
-            // 
-            this.ValorTotal.Text = "Valor Total";
-            // 
-            // MeioPagamento
-            // 
-            this.MeioPagamento.Text = "MeioPagamento";
-            // 
             // butEditarPedido
             // 
             this.butEditarPedido.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -157,6 +134,7 @@
             this.butExportarTXT.TabIndex = 21;
             this.butExportarTXT.Text = "Exportar TXT";
             this.butExportarTXT.UseVisualStyleBackColor = false;
+            this.butExportarTXT.Click += new System.EventHandler(this.butExportarTXT_Click);
             // 
             // butExportarPDF
             // 
@@ -168,6 +146,7 @@
             this.butExportarPDF.TabIndex = 23;
             this.butExportarPDF.Text = "Exportar PDF";
             this.butExportarPDF.UseVisualStyleBackColor = false;
+            this.butExportarPDF.Click += new System.EventHandler(this.butExportarPDF_Click);
             // 
             // butConsultarPedidosTerminados
             // 
@@ -191,17 +170,128 @@
             this.goHome.TabStop = false;
             this.goHome.Click += new System.EventHandler(this.goHome_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.clienteIdDataGridViewTextBoxColumn,
+            this.valorTotalDataGridViewTextBoxColumn,
+            this.estadoIdDataGridViewTextBoxColumn,
+            this.restauranteIdDataGridViewTextBoxColumn,
+            this.trabalhadorIdDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.pedidosBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(25, 212);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1018, 267);
+            this.dataGridView1.TabIndex = 26;
+            // 
+            // restGestDBDataSet
+            // 
+            this.restGestDBDataSet.DataSetName = "RestGestDBDataSet";
+            this.restGestDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pedidosBindingSource
+            // 
+            this.pedidosBindingSource.DataMember = "Pedidos";
+            this.pedidosBindingSource.DataSource = this.restGestDBDataSet;
+            // 
+            // pedidosTableAdapter
+            // 
+            this.pedidosTableAdapter.ClearBeforeFill = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // clienteIdDataGridViewTextBoxColumn
+            // 
+            this.clienteIdDataGridViewTextBoxColumn.DataPropertyName = "ClienteId";
+            this.clienteIdDataGridViewTextBoxColumn.HeaderText = "ClienteId";
+            this.clienteIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.clienteIdDataGridViewTextBoxColumn.Name = "clienteIdDataGridViewTextBoxColumn";
+            this.clienteIdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // valorTotalDataGridViewTextBoxColumn
+            // 
+            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "ValorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "ValorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
+            this.valorTotalDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // estadoIdDataGridViewTextBoxColumn
+            // 
+            this.estadoIdDataGridViewTextBoxColumn.DataPropertyName = "EstadoId";
+            this.estadoIdDataGridViewTextBoxColumn.HeaderText = "EstadoId";
+            this.estadoIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.estadoIdDataGridViewTextBoxColumn.Name = "estadoIdDataGridViewTextBoxColumn";
+            this.estadoIdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // restauranteIdDataGridViewTextBoxColumn
+            // 
+            this.restauranteIdDataGridViewTextBoxColumn.DataPropertyName = "RestauranteId";
+            this.restauranteIdDataGridViewTextBoxColumn.HeaderText = "RestauranteId";
+            this.restauranteIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.restauranteIdDataGridViewTextBoxColumn.Name = "restauranteIdDataGridViewTextBoxColumn";
+            this.restauranteIdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // trabalhadorIdDataGridViewTextBoxColumn
+            // 
+            this.trabalhadorIdDataGridViewTextBoxColumn.DataPropertyName = "TrabalhadorId";
+            this.trabalhadorIdDataGridViewTextBoxColumn.HeaderText = "TrabalhadorId";
+            this.trabalhadorIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.trabalhadorIdDataGridViewTextBoxColumn.Name = "trabalhadorIdDataGridViewTextBoxColumn";
+            this.trabalhadorIdDataGridViewTextBoxColumn.Width = 125;
+            // 
             // FormPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.goHome);
             this.Controls.Add(this.butConsultarPedidosTerminados);
             this.Controls.Add(this.butExportarPDF);
             this.Controls.Add(this.butEditarPedido);
             this.Controls.Add(this.butExportarTXT);
-            this.Controls.Add(this.listViewGestaoPedidos);
             this.Controls.Add(this.butNovoPedido);
             this.Controls.Add(this.labelGestaoPedidos);
             this.Controls.Add(this.comboBoxSelecionarRestaurante);
@@ -214,6 +304,9 @@
             this.Load += new System.EventHandler(this.FormPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pedidosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,16 +319,21 @@
         private System.Windows.Forms.ComboBox comboBoxSelecionarRestaurante;
         private System.Windows.Forms.Label labelGestaoPedidos;
         private System.Windows.Forms.Button butNovoPedido;
-        private System.Windows.Forms.ListView listViewGestaoPedidos;
         private System.Windows.Forms.Button butEditarPedido;
         private System.Windows.Forms.Button butExportarTXT;
         private System.Windows.Forms.Button butExportarPDF;
         private System.Windows.Forms.Button butConsultarPedidosTerminados;
-        private System.Windows.Forms.ColumnHeader IdPedido;
-        private System.Windows.Forms.ColumnHeader NomeFuncionario;
-        private System.Windows.Forms.ColumnHeader Estado;
-        private System.Windows.Forms.ColumnHeader ValorTotal;
-        private System.Windows.Forms.ColumnHeader MeioPagamento;
         private System.Windows.Forms.PictureBox goHome;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private RestGestDBDataSet restGestDBDataSet;
+        private System.Windows.Forms.BindingSource pedidosBindingSource;
+        private RestGestDBDataSetTableAdapters.PedidosTableAdapter pedidosTableAdapter;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn restauranteIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trabalhadorIdDataGridViewTextBoxColumn;
     }
 }
