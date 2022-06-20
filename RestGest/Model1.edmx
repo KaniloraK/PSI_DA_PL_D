@@ -180,7 +180,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="TotalGasto" Type="float" Nullable="false" />
-    <Property Name="NumContribuinte" Type="int" Nullable="false" />
+    <Property Name="NumContribuinte" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="RestauranteItemMenu">
@@ -561,7 +561,7 @@
         </EntityType>
         <EntityType Name="Cliente" BaseType="RestGest.Pessoa" >
           <Property Name="TotalGasto" Type="Double" Nullable="false" />
-          <Property Name="NumContribuinte" Type="Int32" Nullable="false" />
+          <Property Name="NumContribuinte" Type="String" Nullable="false" />
           <NavigationProperty Name="Pedidos" Relationship="RestGest.ClientePedido" FromRole="Cliente" ToRole="Pedido" />
         </EntityType>
         <EntityType Name="Trabalhador" BaseType="RestGest.Pessoa" >

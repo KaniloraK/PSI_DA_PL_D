@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/01/2022 21:57:42
+-- Date Created: 06/19/2022 20:33:04
 -- Generated from EDMX file: C:\Users\mende\OneDrive\Documentos\projeto DA\PSI_DA_PL_D\RestGest\Model1.edmx
 -- --------------------------------------------------
 
@@ -19,9 +19,6 @@ GO
 
 IF OBJECT_ID(N'[dbo].[FK_PessoaMorada]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Pessoas] DROP CONSTRAINT [FK_PessoaMorada];
-GO
-IF OBJECT_ID(N'[dbo].[FK_RestauranteMorada]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Restaurantes] DROP CONSTRAINT [FK_RestauranteMorada];
 GO
 IF OBJECT_ID(N'[dbo].[FK_RestauranteItemMenu_Restaurante]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[RestauranteItemMenu] DROP CONSTRAINT [FK_RestauranteItemMenu_Restaurante];
@@ -58,6 +55,9 @@ IF OBJECT_ID(N'[dbo].[FK_PagamentoMetodoPagamento]', 'F') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[FK_ItemMenuCategoria]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[ItemMenus] DROP CONSTRAINT [FK_ItemMenuCategoria];
+GO
+IF OBJECT_ID(N'[dbo].[FK_MoradaRestaurante]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Restaurantes] DROP CONSTRAINT [FK_MoradaRestaurante];
 GO
 IF OBJECT_ID(N'[dbo].[FK_Trabalhador_inherits_Pessoa]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Pessoas_Trabalhador] DROP CONSTRAINT [FK_Trabalhador_inherits_Pessoa];
@@ -208,7 +208,7 @@ GO
 -- Creating table 'Pessoas_Cliente'
 CREATE TABLE [dbo].[Pessoas_Cliente] (
     [TotalGasto] float  NOT NULL,
-    [NumContribuinte] int  NOT NULL,
+    [NumContribuinte] nvarchar(max)  NOT NULL,
     [Id] int  NOT NULL
 );
 GO

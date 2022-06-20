@@ -1,6 +1,6 @@
 ﻿namespace RestGest
 {
-    partial class FormClientes
+    partial class RegistarTrabalhadores
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientes));
-            this.label1 = new System.Windows.Forms.Label();
-            this.btAdicionarCliente = new System.Windows.Forms.Button();
-            this.btAlterarForm = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistarTrabalhadores));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbPais = new System.Windows.Forms.TextBox();
-            this.tbNif = new System.Windows.Forms.TextBox();
+            this.tbPosicao = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbRua = new System.Windows.Forms.TextBox();
             this.tbCodPostal = new System.Windows.Forms.TextBox();
@@ -47,64 +44,29 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbNome = new System.Windows.Forms.TextBox();
-            this.tbTelemovel = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbSalario = new System.Windows.Forms.TextBox();
+            this.btRegistarTrabalhador = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Gestão de Clientes";
-            // 
-            // btAdicionarCliente
-            // 
-            this.btAdicionarCliente.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btAdicionarCliente.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAdicionarCliente.Location = new System.Drawing.Point(484, 524);
-            this.btAdicionarCliente.Name = "btAdicionarCliente";
-            this.btAdicionarCliente.Size = new System.Drawing.Size(157, 37);
-            this.btAdicionarCliente.TabIndex = 14;
-            this.btAdicionarCliente.Text = "Registar Cliente";
-            this.btAdicionarCliente.UseVisualStyleBackColor = false;
-            this.btAdicionarCliente.Click += new System.EventHandler(this.btAdicionarCliente_Click);
-            // 
-            // btAlterarForm
-            // 
-            this.btAlterarForm.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btAlterarForm.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAlterarForm.Location = new System.Drawing.Point(301, 524);
-            this.btAlterarForm.Name = "btAlterarForm";
-            this.btAlterarForm.Size = new System.Drawing.Size(157, 36);
-            this.btAlterarForm.TabIndex = 15;
-            this.btAlterarForm.Text = "Alterar Clientes";
-            this.btAlterarForm.UseVisualStyleBackColor = false;
-            this.btAlterarForm.Click += new System.EventHandler(this.btAlterarForm_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(980, 527);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 34);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(183, 178);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.tbPais);
-            this.groupBox1.Controls.Add(this.tbNif);
+            this.groupBox1.Controls.Add(this.tbPosicao);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbRua);
             this.groupBox1.Controls.Add(this.tbCodPostal);
@@ -115,13 +77,13 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.tbNome);
-            this.groupBox1.Controls.Add(this.tbTelemovel);
-            this.groupBox1.Location = new System.Drawing.Point(423, 84);
+            this.groupBox1.Controls.Add(this.tbSalario);
+            this.groupBox1.Location = new System.Drawing.Point(279, 89);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(561, 396);
-            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Registar Cliente";
+            this.groupBox1.Text = "Registar Trabalhador";
             // 
             // label8
             // 
@@ -130,9 +92,9 @@
             this.label8.Location = new System.Drawing.Point(13, 136);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 29);
+            this.label8.Size = new System.Drawing.Size(99, 29);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Telemovel:";
+            this.label8.Text = "Salário:";
             // 
             // tbPais
             // 
@@ -142,14 +104,14 @@
             this.tbPais.Size = new System.Drawing.Size(219, 22);
             this.tbPais.TabIndex = 15;
             // 
-            // tbNif
+            // tbPosicao
             // 
-            this.tbNif.Location = new System.Drawing.Point(139, 95);
-            this.tbNif.Margin = new System.Windows.Forms.Padding(4);
-            this.tbNif.Name = "tbNif";
-            this.tbNif.Size = new System.Drawing.Size(219, 22);
-            this.tbNif.TabIndex = 14;
-            this.tbNif.Text = " ";
+            this.tbPosicao.Location = new System.Drawing.Point(139, 95);
+            this.tbPosicao.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPosicao.Name = "tbPosicao";
+            this.tbPosicao.Size = new System.Drawing.Size(219, 22);
+            this.tbPosicao.TabIndex = 14;
+            this.tbPosicao.Text = " ";
             // 
             // label2
             // 
@@ -158,9 +120,9 @@
             this.label2.Location = new System.Drawing.Point(21, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 29);
+            this.label2.Size = new System.Drawing.Size(111, 29);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Nif:";
+            this.label2.Text = "Posição:";
             // 
             // tbRua
             // 
@@ -251,65 +213,62 @@
             this.tbNome.TabIndex = 4;
             this.tbNome.Text = " ";
             // 
-            // tbTelemovel
+            // tbSalario
             // 
-            this.tbTelemovel.Location = new System.Drawing.Point(159, 144);
-            this.tbTelemovel.Margin = new System.Windows.Forms.Padding(4);
-            this.tbTelemovel.Name = "tbTelemovel";
-            this.tbTelemovel.Size = new System.Drawing.Size(199, 22);
-            this.tbTelemovel.TabIndex = 5;
+            this.tbSalario.Location = new System.Drawing.Point(139, 144);
+            this.tbSalario.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSalario.Name = "tbSalario";
+            this.tbSalario.Size = new System.Drawing.Size(219, 22);
+            this.tbSalario.TabIndex = 5;
             // 
-            // pictureBox1
+            // btRegistarTrabalhador
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(43, 140);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 238);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.btRegistarTrabalhador.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btRegistarTrabalhador.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRegistarTrabalhador.Location = new System.Drawing.Point(704, 526);
+            this.btRegistarTrabalhador.Name = "btRegistarTrabalhador";
+            this.btRegistarTrabalhador.Size = new System.Drawing.Size(168, 35);
+            this.btRegistarTrabalhador.TabIndex = 30;
+            this.btRegistarTrabalhador.Text = "Registar Trabalhador";
+            this.btRegistarTrabalhador.UseVisualStyleBackColor = false;
+            this.btRegistarTrabalhador.Click += new System.EventHandler(this.btRegistarTrabalhador_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(688, 524);
+            this.button1.Location = new System.Drawing.Point(963, 526);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 35);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Apagar Clientes";
+            this.button1.Size = new System.Drawing.Size(77, 35);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // FormClientes
+            // RegistarTrabalhadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 573);
+            this.ClientSize = new System.Drawing.Size(1065, 573);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btRegistarTrabalhador);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btAlterarForm);
-            this.Controls.Add(this.btAdicionarCliente);
-            this.Controls.Add(this.label1);
-            this.Name = "FormClientes";
-            this.Text = "Form1";
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "RegistarTrabalhadores";
+            this.Text = " ";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btAdicionarCliente;
-        private System.Windows.Forms.Button btAlterarForm;
-        private System.Windows.Forms.Button button2;
+
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tbNif;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbPais;
+        private System.Windows.Forms.TextBox tbPosicao;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbRua;
         private System.Windows.Forms.TextBox tbCodPostal;
@@ -320,11 +279,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbNome;
-        private System.Windows.Forms.TextBox tbTelemovel;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tbPais;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox tbSalario;
+        private System.Windows.Forms.Button btRegistarTrabalhador;
         private System.Windows.Forms.Button button1;
     }
 }
-

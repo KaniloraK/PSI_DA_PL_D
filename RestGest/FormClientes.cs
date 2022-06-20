@@ -14,6 +14,7 @@ namespace RestGest
     {
 
         RestGestContainer container;
+
         public FormClientes()
         {
             InitializeComponent();
@@ -26,33 +27,36 @@ namespace RestGest
             Morada clienteMorada = new Morada();
             Pessoa clientePessoa = new Pessoa();
 
-            clienteMorada.Cidade = tbTelemovel.Text;
+            clienteMorada.Cidade = tbCidade.Text;
             clienteMorada.CodPostal = tbCodPostal.Text;
             clienteMorada.Rua = tbRua.Text;
-            clienteMorada.Pais = tbCidade.Text;
+            clienteMorada.Pais = tbPais.Text;
 
             container.Moradas.Add(clienteMorada);
 
             cliente.Telemovel = tbTelemovel.Text;
-            cliente.Nome = tbNome.Text;
-            cliente.nif = tbNif.Text;
+            cliente.Nome = tbNome.Text;    
+            cliente.NumContribuinte = tbNif.Text;
             cliente.Morada = clienteMorada;
-           
+            
+
             container.Pessoas.Add(cliente);
            
             container.SaveChanges();
-            lbClientesCriados.DataSource = null;
-            lbClientesCriados.Items.Add(container);
             
             MessageBox.Show("Cliente Adicionado Com sucesso");
-            
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
             new FormPrincipal().Show();
+        }
+
+        private void btAlterarForm_Click(object sender, EventArgs e)
+        {
+            new AlterarCliente().Show();
+            this.Close();
         }
     }
 }

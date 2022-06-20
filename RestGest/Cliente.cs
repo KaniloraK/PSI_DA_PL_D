@@ -21,7 +21,7 @@ namespace RestGest
         }
     
         public double TotalGasto { get; set; }
-        public int NumContribuinte { get; set; }
+        public string NumContribuinte { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido> Pedidos { get; set; }

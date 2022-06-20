@@ -31,7 +31,6 @@ namespace RestGest
         private void btAlterarRestaurante_Click(object sender, EventArgs e)
         {
            
-
             restauranteSelecionado.Morada.Cidade = tbCidade.Text;
             restauranteSelecionado.Morada.Rua = tbRua.Text;
             restauranteSelecionado.Morada.CodPostal = tbCodPostal.Text;
@@ -41,12 +40,7 @@ namespace RestGest
 
             container.SaveChanges();
 
-            MessageBox.Show("Restaurante registado com sucesso");
-
-
-
-            //MessageBox.Show("Restaurante Alterado com sucesso");
-
+            MessageBox.Show("Restaurante alterado com sucesso");
         }
 
         private void AlterarRestaurante_Load(object sender, EventArgs e)
@@ -57,16 +51,7 @@ namespace RestGest
             cbRestauranteAAlterar.DisplayMember = "Nome";
             cbRestauranteAAlterar.DataSource = restaurantes;
 
-            /*
-            tbNome.Text = restaurantes[0].Nome;
-            tbCodPostal.Text = moradas[0].CodPostal;
-            tbPais.Text = moradas[0].Pais;
-            tbCidade.Text = moradas[0].Cidade;
-            tbRua.Text = moradas[0].Rua;
-           */
-
-           
-
+         
 
             //container.SaveChanges();
 

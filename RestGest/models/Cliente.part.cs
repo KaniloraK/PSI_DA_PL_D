@@ -8,18 +8,18 @@ namespace RestGest
 {
     public partial class Cliente
     {
-        public string nif;
+        public string numContribuinte;
         public float totalGasto;
 
-        public Cliente(string nif, float totalGasto)
+        public Cliente(string numContribuinte, float totalGasto)
         {
-            this.nif = nif;
+            this.numContribuinte = numContribuinte;
             this.totalGasto = totalGasto;
         }
 
         public override string ToString()
         {
-            return $"{nif}";
+            return $"{numContribuinte}";
 
         }
     }

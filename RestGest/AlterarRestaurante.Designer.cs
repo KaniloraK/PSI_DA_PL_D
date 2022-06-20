@@ -37,6 +37,7 @@
             this.cbRestauranteAAlterar = new System.Windows.Forms.ComboBox();
             this.tbRua = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbNome = new System.Windows.Forms.TextBox();
             this.tbPais = new System.Windows.Forms.TextBox();
             this.tbCidade = new System.Windows.Forms.TextBox();
             this.tbCodPostal = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.restGestDBDataSet = new RestGest.RestGestDBDataSet();
             this.restaurantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.restaurantesTableAdapter = new RestGest.RestGestDBDataSetTableAdapters.RestaurantesTableAdapter();
-            this.tbNome = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -130,7 +130,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cbRestauranteAAlterar);
-            this.groupBox1.Location = new System.Drawing.Point(195, 138);
+            this.groupBox1.Location = new System.Drawing.Point(198, 138);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -138,6 +138,14 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alterar Restaurante";
+            // 
+            // tbNome
+            // 
+            this.tbNome.Location = new System.Drawing.Point(179, 135);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(241, 22);
+            this.tbNome.TabIndex = 15;
             // 
             // tbPais
             // 
@@ -252,14 +260,6 @@
             // restaurantesTableAdapter
             // 
             this.restaurantesTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbNome
-            // 
-            this.tbNome.Location = new System.Drawing.Point(179, 135);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(241, 22);
-            this.tbNome.TabIndex = 15;
             // 
             // AlterarRestaurante
             // 
