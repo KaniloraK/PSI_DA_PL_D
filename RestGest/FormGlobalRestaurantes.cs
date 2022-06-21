@@ -14,7 +14,7 @@ namespace RestGest
         private void btAbrirMenu_Click(object sender, EventArgs e)
         {
             new FormRegistarRestaurante().Show();
-            this.WindowState = FormWindowState.Minimized; 
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btAlterarRestaurante_Click(object sender, EventArgs e)
@@ -23,10 +23,18 @@ namespace RestGest
             this.Hide();
         }
 
+        private void btnGerirCategoriasMenu_Click(object sender, EventArgs e)
+        {
+            new FormCategoria().Show();
+            this.Close();
+
+        }
+
         private void btSair_Click(object sender, EventArgs e)
         {
             this.Close();
             new FormPrincipal().Show();
         }
+
     }
 }

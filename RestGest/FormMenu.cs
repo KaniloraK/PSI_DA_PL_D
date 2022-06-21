@@ -23,5 +23,11 @@ namespace RestGest
                 this.Hide();
             
         }
+
+        private void butNovoPrato_Click(object sender, EventArgs e)
+        {
+            new FormAddMenu().Show();
+            this.Close();
+        }
     }
 }

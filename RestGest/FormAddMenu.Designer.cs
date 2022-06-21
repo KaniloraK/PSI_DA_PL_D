@@ -107,9 +107,9 @@
             // textBoxPreco
             // 
             this.textBoxPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPreco.Location = new System.Drawing.Point(132, 127);
+            this.textBoxPreco.Location = new System.Drawing.Point(156, 127);
             this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(581, 27);
+            this.textBoxPreco.Size = new System.Drawing.Size(557, 27);
             this.textBoxPreco.TabIndex = 8;
             // 
             // labelPrecoPrato
@@ -125,17 +125,17 @@
             // textBoxIngredientesPrato
             // 
             this.textBoxIngredientesPrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIngredientesPrato.Location = new System.Drawing.Point(132, 94);
+            this.textBoxIngredientesPrato.Location = new System.Drawing.Point(156, 94);
             this.textBoxIngredientesPrato.Name = "textBoxIngredientesPrato";
-            this.textBoxIngredientesPrato.Size = new System.Drawing.Size(581, 27);
+            this.textBoxIngredientesPrato.Size = new System.Drawing.Size(557, 27);
             this.textBoxIngredientesPrato.TabIndex = 6;
             // 
             // textBoxNomePrato
             // 
             this.textBoxNomePrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNomePrato.Location = new System.Drawing.Point(132, 59);
+            this.textBoxNomePrato.Location = new System.Drawing.Point(156, 59);
             this.textBoxNomePrato.Name = "textBoxNomePrato";
-            this.textBoxNomePrato.Size = new System.Drawing.Size(581, 27);
+            this.textBoxNomePrato.Size = new System.Drawing.Size(557, 27);
             this.textBoxNomePrato.TabIndex = 5;
             // 
             // labelIngredientesPrato
@@ -162,9 +162,9 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(132, 22);
+            this.comboBox1.Location = new System.Drawing.Point(156, 22);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(581, 28);
+            this.comboBox1.Size = new System.Drawing.Size(557, 28);
             this.comboBox1.TabIndex = 1;
             // 
             // labelCategoria

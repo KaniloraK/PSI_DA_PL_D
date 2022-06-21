@@ -33,8 +33,9 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.btAbrirMenu = new System.Windows.Forms.Button();
             this.btAlterarRestaurante = new System.Windows.Forms.Button();
-            this.lbMétodosPagamento = new System.Windows.Forms.ListBox();
             this.btSair = new System.Windows.Forms.Button();
+            this.btnMetodosPagamento = new System.Windows.Forms.Button();
+            this.btnGerirCategoriasMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // 
             this.lbTitulo.AutoSize = true;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.Location = new System.Drawing.Point(304, 98);
+            this.lbTitulo.Location = new System.Drawing.Point(313, 127);
             this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(430, 36);
@@ -89,25 +90,12 @@
             this.btAlterarRestaurante.UseVisualStyleBackColor = false;
             this.btAlterarRestaurante.Click += new System.EventHandler(this.btAlterarRestaurante_Click);
             // 
-            // lbMétodosPagamento
-            // 
-            this.lbMétodosPagamento.FormattingEnabled = true;
-            this.lbMétodosPagamento.ItemHeight = 16;
-            this.lbMétodosPagamento.Items.AddRange(new object[] {
-            "Multibanco",
-            "Cartão de Crédito",
-            "Numerário"});
-            this.lbMétodosPagamento.Location = new System.Drawing.Point(26, 388);
-            this.lbMétodosPagamento.Name = "lbMétodosPagamento";
-            this.lbMétodosPagamento.Size = new System.Drawing.Size(473, 196);
-            this.lbMétodosPagamento.TabIndex = 4;
-            // 
             // btSair
             // 
             this.btSair.BackColor = System.Drawing.Color.SlateGray;
             this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSair.ForeColor = System.Drawing.SystemColors.Control;
-            this.btSair.Location = new System.Drawing.Point(961, 568);
+            this.btSair.Location = new System.Drawing.Point(493, 495);
             this.btSair.Margin = new System.Windows.Forms.Padding(4);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(117, 48);
@@ -116,13 +104,42 @@
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
+            // btnMetodosPagamento
+            // 
+            this.btnMetodosPagamento.BackColor = System.Drawing.Color.SlateGray;
+            this.btnMetodosPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMetodosPagamento.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMetodosPagamento.Location = new System.Drawing.Point(628, 344);
+            this.btnMetodosPagamento.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMetodosPagamento.Name = "btnMetodosPagamento";
+            this.btnMetodosPagamento.Size = new System.Drawing.Size(240, 57);
+            this.btnMetodosPagamento.TabIndex = 7;
+            this.btnMetodosPagamento.Text = "Gerir Metodos de Pagamento";
+            this.btnMetodosPagamento.UseVisualStyleBackColor = false;
+            // 
+            // btnGerirCategoriasMenu
+            // 
+            this.btnGerirCategoriasMenu.BackColor = System.Drawing.Color.SlateGray;
+            this.btnGerirCategoriasMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnGerirCategoriasMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerirCategoriasMenu.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGerirCategoriasMenu.Location = new System.Drawing.Point(204, 344);
+            this.btnGerirCategoriasMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGerirCategoriasMenu.Name = "btnGerirCategoriasMenu";
+            this.btnGerirCategoriasMenu.Size = new System.Drawing.Size(248, 57);
+            this.btnGerirCategoriasMenu.TabIndex = 6;
+            this.btnGerirCategoriasMenu.Text = "Gerir Categorias Menu";
+            this.btnGerirCategoriasMenu.UseVisualStyleBackColor = false;
+            this.btnGerirCategoriasMenu.Click += new System.EventHandler(this.btnGerirCategoriasMenu_Click);
+            // 
             // FormGlobalRestaurantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 629);
+            this.ClientSize = new System.Drawing.Size(944, 596);
+            this.Controls.Add(this.btnMetodosPagamento);
+            this.Controls.Add(this.btnGerirCategoriasMenu);
             this.Controls.Add(this.btSair);
-            this.Controls.Add(this.lbMétodosPagamento);
             this.Controls.Add(this.btAlterarRestaurante);
             this.Controls.Add(this.btAbrirMenu);
             this.Controls.Add(this.lbTitulo);
@@ -142,7 +159,8 @@
         private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.Button btAbrirMenu;
         private System.Windows.Forms.Button btAlterarRestaurante;
-        private System.Windows.Forms.ListBox lbMétodosPagamento;
         private System.Windows.Forms.Button btSair;
+        private System.Windows.Forms.Button btnMetodosPagamento;
+        private System.Windows.Forms.Button btnGerirCategoriasMenu;
     }
 }

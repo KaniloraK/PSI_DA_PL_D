@@ -69,6 +69,7 @@
             this.butNovoPrato.TabIndex = 11;
             this.butNovoPrato.Text = "+ Novo Prato";
             this.butNovoPrato.UseVisualStyleBackColor = false;
+            this.butNovoPrato.Click += new System.EventHandler(this.butNovoPrato_Click);
             // 
             // contextMenuStrip1
             // 
