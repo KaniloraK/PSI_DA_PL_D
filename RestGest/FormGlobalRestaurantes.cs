@@ -25,7 +25,7 @@ namespace RestGest
 
         private void btnGerirCategoriasMenu_Click(object sender, EventArgs e)
         {
-            new FormCategoria().Show();
+            new FormCategorias().Show();
             this.Close();
 
         }

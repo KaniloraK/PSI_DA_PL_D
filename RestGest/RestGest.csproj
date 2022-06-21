@@ -89,6 +89,12 @@
     <Compile Include="FormAddNovoPedido.Designer.cs">
       <DependentUpon>FormAddNovoPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategorias.Designer.cs">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
