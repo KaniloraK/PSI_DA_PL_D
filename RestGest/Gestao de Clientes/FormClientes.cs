@@ -163,5 +163,28 @@ namespace RestGest
                 errorProvider1.SetError(tbRua, "");
             }
         }
+
+        private void FormClientes_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'restGestDBDataSet.Moradas' table. You can move, or remove it, as needed.
+            this.moradasTableAdapter.Fill(this.restGestDBDataSet.Moradas);
+            // TODO: This line of code loads data into the 'restGestDBDataSet.Pessoas' table. You can move, or remove it, as needed.
+            this.pessoasTableAdapter.Fill(this.restGestDBDataSet.Pessoas);
+            // TODO: This line of code loads data into the 'restGestDBDataSet.Pessoas_Cliente' table. You can move, or remove it, as needed.
+            this.pessoas_ClienteTableAdapter.Fill(this.restGestDBDataSet.Pessoas_Cliente);
+
+        }
+
+        private void tbNif_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnApagarCliente(object sender, EventArgs e)
+        {
+            new FormApagarCliente().Show();
+            this.Hide();
+            
+        }
     }
 }

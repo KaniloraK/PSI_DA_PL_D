@@ -62,6 +62,12 @@
     <Compile Include="Gestao de Clientes\AlterarCliente.Designer.cs">
       <DependentUpon>AlterarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestao de Clientes\FormApagarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestao de Clientes\FormApagarCliente.Designer.cs">
+      <DependentUpon>FormApagarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestao Global Restaurantes\AlterarRestaurante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </Compile>
     <EmbeddedResource Include="Gestao de Clientes\AlterarCliente.resx">
       <DependentUpon>AlterarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestao de Clientes\FormApagarCliente.resx">
+      <DependentUpon>FormApagarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestao Global Restaurantes\AlterarRestaurante.resx">
       <DependentUpon>AlterarRestaurante.cs</DependentUpon>

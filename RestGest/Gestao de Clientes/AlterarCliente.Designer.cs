@@ -280,6 +280,7 @@
             this.btSairForm.TabIndex = 30;
             this.btSairForm.Text = "Sair";
             this.btSairForm.UseVisualStyleBackColor = false;
+            this.btSairForm.Click += new System.EventHandler(this.btSairForm_Click);
             // 
             // errorProvider1
             // 

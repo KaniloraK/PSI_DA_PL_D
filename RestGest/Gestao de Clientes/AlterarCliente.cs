@@ -147,7 +147,7 @@ namespace RestGest
 
         private void tbCodPostal_Validating(object sender, CancelEventArgs e)
         {
-            if (tbCodPostal.Text.Length < 9 || tbCodPostal.Text.Length > 9)
+            if (tbCodPostal.Text.Length < 8 || tbCodPostal.Text.Length > 8)
             {
                 e.Cancel = true;
                 tbCodPostal.Focus();
@@ -174,5 +174,13 @@ namespace RestGest
                 errorProvider1.SetError(tbRua, "");
             }
         }
+
+        private void btSairForm_Click(object sender, EventArgs e)
+        {
+            
+            new FormPrincipal().Show();
+            this.Close();
+        }
     }
 }
+
