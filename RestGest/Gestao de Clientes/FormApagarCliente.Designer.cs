@@ -118,6 +118,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormApagarCliente";
             this.Text = "FormApagarCliente";
+            this.Load += new System.EventHandler(this.FormApagarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

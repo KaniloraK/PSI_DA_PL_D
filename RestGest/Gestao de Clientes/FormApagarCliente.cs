@@ -16,6 +16,7 @@ namespace RestGest
     public partial class FormApagarCliente : Form
     {
         RestGestContainer container;
+        List<Pessoa> clientes = null;
         public FormApagarCliente()
         {
             InitializeComponent();
@@ -46,10 +47,14 @@ namespace RestGest
                     }
                     nomeClinete = cliente.Nome;
 
+                    container.Pessoas.Remove(cliente);
+
                     container.SaveChanges();
 
 
                     MessageBox.Show("Cliente apagado");
+
+                    comboBoxListaClientes.DataSource = null;
 
                     Update();
                 }
@@ -73,6 +78,15 @@ namespace RestGest
             }
                             
 
+        }
+
+        private void FormApagarCliente_Load(object sender, EventArgs e)
+        {
+            clientes = container.Pessoas.ToList();
+
+            comboBoxListaClientes.DataSource = null;
+            comboBoxListaClientes.DisplayMember = "Nome";
+            comboBoxListaClientes.DataSource = clientes;
         }
     }
     
