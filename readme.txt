@@ -1,4 +1,3 @@
 # PSI_DA_PL_DMe
-Projeto "RestGest" realizado no âmbito da UC Desenvolvimento de Aplicações, pelos estudantes: Karolina Kincharuk, Nuno Mendes e Rúben Serrano.
+Projeto "RestGest" realizado no âmbito da UC Desenvolvimento de Aplicações, pelos estudantes: Karolina Kincharuk e Nuno Mendes.
 
---> FALTA ACRESCENTAR: os processos e dados necessários à instalação, configuração e execução da aplicação;
