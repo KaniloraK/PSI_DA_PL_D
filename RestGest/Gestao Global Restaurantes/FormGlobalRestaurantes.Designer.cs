@@ -116,6 +116,7 @@
             this.btnMetodosPagamento.TabIndex = 7;
             this.btnMetodosPagamento.Text = "Gerir Metodos de Pagamento";
             this.btnMetodosPagamento.UseVisualStyleBackColor = false;
+            this.btnMetodosPagamento.Click += new System.EventHandler(this.btnMetodosPagamento_Click);
             // 
             // btnGerirCategoriasMenu
             // 

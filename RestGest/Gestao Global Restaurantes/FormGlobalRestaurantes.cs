@@ -40,5 +40,12 @@ namespace RestGest
         {
 
         }
+
+        private void btnMetodosPagamento_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+            new FormMetodoPagamento().Show();
+        }
     }
 }
