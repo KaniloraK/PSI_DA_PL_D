@@ -88,6 +88,21 @@ namespace RestGest
             comboBoxListaClientes.DisplayMember = "Nome";
             comboBoxListaClientes.DataSource = clientes;
         }
+
+        private void lblSelecionarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApagarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

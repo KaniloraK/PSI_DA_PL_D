@@ -194,6 +194,9 @@
     <Compile Include="Restaurante.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="RestGestDBDataSet.cs">
+      <DependentUpon>RestGestDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RestGestDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -210,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestao Global Restaurantes\AlterarRestaurante.resx">
       <DependentUpon>AlterarRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestao Global Restaurantes\FormCategorias.resx">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\FormAddMenu.resx">
       <DependentUpon>FormAddMenu.cs</DependentUpon>

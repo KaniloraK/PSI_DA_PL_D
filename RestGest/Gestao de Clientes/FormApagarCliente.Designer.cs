@@ -48,6 +48,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblApagarCliente
             // 
@@ -58,6 +59,7 @@
             this.lblApagarCliente.Size = new System.Drawing.Size(186, 29);
             this.lblApagarCliente.TabIndex = 28;
             this.lblApagarCliente.Text = "Apagar Cliente";
+            this.lblApagarCliente.Click += new System.EventHandler(this.lblApagarCliente_Click);
             // 
             // lblSelecionarCliente
             // 
@@ -68,6 +70,7 @@
             this.lblSelecionarCliente.Size = new System.Drawing.Size(260, 18);
             this.lblSelecionarCliente.TabIndex = 29;
             this.lblSelecionarCliente.Text = "Selecione o cliente que deseja apagar:";
+            this.lblSelecionarCliente.Click += new System.EventHandler(this.lblSelecionarCliente_Click);
             // 
             // comboBoxListaClientes
             // 

@@ -87,7 +87,7 @@ namespace RestGest
 
         private void tbNif_Validating(object sender, CancelEventArgs e)
         {
-            if (tbNif.Text.Length < 10 || tbNif.Text.Length > 10)
+            if (tbNif.Text.Length < 9 || tbNif.Text.Length > 9)
             {
                 e.Cancel = true;
                 tbNif.Focus();
@@ -99,7 +99,7 @@ namespace RestGest
                 errorProvider1.SetError(tbNif, "");
             }
         }
-
+      
         private void tbTelemovel_Validating(object sender, CancelEventArgs e)
         {
             if (tbTelemovel.Text.Length < 9 || tbTelemovel.Text.Length > 9)
@@ -147,7 +147,7 @@ namespace RestGest
 
         private void tbCodPostal_Validating(object sender, CancelEventArgs e)
         {
-            if (tbCodPostal.Text.Length < 8 || tbCodPostal.Text.Length > 8)
+            if (tbCodPostal.Text.Length < 9 || tbCodPostal.Text.Length > 9)
             {
                 e.Cancel = true;
                 tbCodPostal.Focus();
