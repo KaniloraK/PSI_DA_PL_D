@@ -42,10 +42,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(301, 26);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(119, 99);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -54,7 +54,7 @@
             // 
             this.lbTitulo.AutoSize = true;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.Location = new System.Drawing.Point(313, 127);
+            this.lbTitulo.Location = new System.Drawing.Point(168, 176);
             this.lbTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(430, 36);
@@ -67,7 +67,7 @@
             this.btAbrirMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btAbrirMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAbrirMenu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btAbrirMenu.Location = new System.Drawing.Point(204, 269);
+            this.btAbrirMenu.Location = new System.Drawing.Point(23, 271);
             this.btAbrirMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btAbrirMenu.Name = "btAbrirMenu";
             this.btAbrirMenu.Size = new System.Drawing.Size(248, 57);
@@ -81,7 +81,7 @@
             this.btAlterarRestaurante.BackColor = System.Drawing.Color.SlateGray;
             this.btAlterarRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAlterarRestaurante.ForeColor = System.Drawing.SystemColors.Control;
-            this.btAlterarRestaurante.Location = new System.Drawing.Point(628, 269);
+            this.btAlterarRestaurante.Location = new System.Drawing.Point(447, 271);
             this.btAlterarRestaurante.Margin = new System.Windows.Forms.Padding(4);
             this.btAlterarRestaurante.Name = "btAlterarRestaurante";
             this.btAlterarRestaurante.Size = new System.Drawing.Size(240, 57);
@@ -95,12 +95,12 @@
             this.btSair.BackColor = System.Drawing.Color.SlateGray;
             this.btSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSair.ForeColor = System.Drawing.SystemColors.Control;
-            this.btSair.Location = new System.Drawing.Point(493, 495);
+            this.btSair.Location = new System.Drawing.Point(287, 441);
             this.btSair.Margin = new System.Windows.Forms.Padding(4);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(117, 48);
+            this.btSair.Size = new System.Drawing.Size(152, 59);
             this.btSair.TabIndex = 5;
-            this.btSair.Text = "Sair";
+            this.btSair.Text = "Voltar ao Menu Anterior";
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
@@ -109,7 +109,7 @@
             this.btnMetodosPagamento.BackColor = System.Drawing.Color.SlateGray;
             this.btnMetodosPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMetodosPagamento.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMetodosPagamento.Location = new System.Drawing.Point(628, 344);
+            this.btnMetodosPagamento.Location = new System.Drawing.Point(447, 346);
             this.btnMetodosPagamento.Margin = new System.Windows.Forms.Padding(4);
             this.btnMetodosPagamento.Name = "btnMetodosPagamento";
             this.btnMetodosPagamento.Size = new System.Drawing.Size(240, 57);
@@ -123,7 +123,7 @@
             this.btnGerirCategoriasMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnGerirCategoriasMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerirCategoriasMenu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGerirCategoriasMenu.Location = new System.Drawing.Point(204, 344);
+            this.btnGerirCategoriasMenu.Location = new System.Drawing.Point(23, 346);
             this.btnGerirCategoriasMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnGerirCategoriasMenu.Name = "btnGerirCategoriasMenu";
             this.btnGerirCategoriasMenu.Size = new System.Drawing.Size(248, 57);
@@ -136,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 596);
+            this.ClientSize = new System.Drawing.Size(733, 562);
             this.Controls.Add(this.btnMetodosPagamento);
             this.Controls.Add(this.btnGerirCategoriasMenu);
             this.Controls.Add(this.btSair);
@@ -144,9 +144,11 @@
             this.Controls.Add(this.btAbrirMenu);
             this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormGlobalRestaurantes";
-            this.Text = "FormGlobalRestaurantes";
+            this.Text = "Gestão Global de Restaurantes";
+            this.Load += new System.EventHandler(this.FormGlobalRestaurantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -227,7 +227,7 @@
             this.btSairMenu.Name = "btSairMenu";
             this.btSairMenu.Size = new System.Drawing.Size(176, 54);
             this.btSairMenu.TabIndex = 9;
-            this.btSairMenu.Text = "Sair";
+            this.btSairMenu.Text = "Voltar ao Menu Anterior";
             this.btSairMenu.UseVisualStyleBackColor = false;
             this.btSairMenu.Click += new System.EventHandler(this.btSairMenu_Click);
             // 

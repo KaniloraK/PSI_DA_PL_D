@@ -56,16 +56,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlterarCliente.cs">
+    <Compile Include="Gestao de Clientes\AlterarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlterarCliente.Designer.cs">
+    <Compile Include="Gestao de Clientes\AlterarCliente.Designer.cs">
       <DependentUpon>AlterarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlterarRestaurante.cs">
+    <Compile Include="Gestao Global Restaurantes\AlterarRestaurante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlterarRestaurante.Designer.cs">
+    <Compile Include="Gestao Global Restaurantes\AlterarRestaurante.Designer.cs">
       <DependentUpon>AlterarRestaurante.cs</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs">
@@ -77,64 +77,64 @@
     <Compile Include="Estado.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="FormAddMenu.cs">
+    <Compile Include="Menu\FormAddMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddMenu.Designer.cs">
+    <Compile Include="Menu\FormAddMenu.Designer.cs">
       <DependentUpon>FormAddMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddNovoPedido.cs">
+    <Compile Include="Pedidos\FormAddNovoPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddNovoPedido.Designer.cs">
+    <Compile Include="Pedidos\FormAddNovoPedido.Designer.cs">
       <DependentUpon>FormAddNovoPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCategorias.cs">
+    <Compile Include="Gestao Global Restaurantes\FormCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCategorias.Designer.cs">
+    <Compile Include="Gestao Global Restaurantes\FormCategorias.Designer.cs">
       <DependentUpon>FormCategorias.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormClientes.cs">
+    <Compile Include="Gestao de Clientes\FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormClientes.Designer.cs">
+    <Compile Include="Gestao de Clientes\FormClientes.Designer.cs">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGlobalRestaurantes.cs">
+    <Compile Include="Gestao Global Restaurantes\FormGlobalRestaurantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGlobalRestaurantes.Designer.cs">
+    <Compile Include="Gestao Global Restaurantes\FormGlobalRestaurantes.Designer.cs">
       <DependentUpon>FormGlobalRestaurantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenu.cs">
+    <Compile Include="Menu\FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenu.Designer.cs">
+    <Compile Include="Menu\FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPedidos.cs">
+    <Compile Include="Pedidos\FormPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPedidos.Designer.cs">
+    <Compile Include="Pedidos\FormPedidos.Designer.cs">
       <DependentUpon>FormPedidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipal.cs">
+    <Compile Include="Home\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
+    <Compile Include="Home\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistarRestaurante.cs">
+    <Compile Include="Gestao Global Restaurantes\FormRegistarRestaurante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistarRestaurante.Designer.cs">
+    <Compile Include="Gestao Global Restaurantes\FormRegistarRestaurante.Designer.cs">
       <DependentUpon>FormRegistarRestaurante.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRestauranteIndividual.cs">
+    <Compile Include="Gestao Individual Restaurante\FormRestauranteIndividual.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRestauranteIndividual.Designer.cs">
+    <Compile Include="Gestao Individual Restaurante\FormRestauranteIndividual.Designer.cs">
       <DependentUpon>FormRestauranteIndividual.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemMenu.cs">
@@ -179,10 +179,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistarTrabalhadores.cs">
+    <Compile Include="Gestao Individual Restaurante\RegistarTrabalhadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistarTrabalhadores.Designer.cs">
+    <Compile Include="Gestao Individual Restaurante\RegistarTrabalhadores.Designer.cs">
       <DependentUpon>RegistarTrabalhadores.cs</DependentUpon>
     </Compile>
     <Compile Include="Restaurante.cs">
@@ -196,37 +196,37 @@
     <Compile Include="Trabalhador.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AlterarCliente.resx">
+    <EmbeddedResource Include="Gestao de Clientes\AlterarCliente.resx">
       <DependentUpon>AlterarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlterarRestaurante.resx">
+    <EmbeddedResource Include="Gestao Global Restaurantes\AlterarRestaurante.resx">
       <DependentUpon>AlterarRestaurante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddMenu.resx">
+    <EmbeddedResource Include="Menu\FormAddMenu.resx">
       <DependentUpon>FormAddMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddNovoPedido.resx">
+    <EmbeddedResource Include="Pedidos\FormAddNovoPedido.resx">
       <DependentUpon>FormAddNovoPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormClientes.resx">
+    <EmbeddedResource Include="Gestao de Clientes\FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGlobalRestaurantes.resx">
+    <EmbeddedResource Include="Gestao Global Restaurantes\FormGlobalRestaurantes.resx">
       <DependentUpon>FormGlobalRestaurantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenu.resx">
+    <EmbeddedResource Include="Menu\FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPedidos.resx">
+    <EmbeddedResource Include="Pedidos\FormPedidos.resx">
       <DependentUpon>FormPedidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipal.resx">
+    <EmbeddedResource Include="Home\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistarRestaurante.resx">
+    <EmbeddedResource Include="Gestao Global Restaurantes\FormRegistarRestaurante.resx">
       <DependentUpon>FormRegistarRestaurante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRestauranteIndividual.resx">
+    <EmbeddedResource Include="Gestao Individual Restaurante\FormRestauranteIndividual.resx">
       <DependentUpon>FormRestauranteIndividual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -238,7 +238,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegistarTrabalhadores.resx">
+    <EmbeddedResource Include="Gestao Individual Restaurante\RegistarTrabalhadores.resx">
       <DependentUpon>RegistarTrabalhadores.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
@@ -292,5 +292,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

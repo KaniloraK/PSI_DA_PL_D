@@ -141,7 +141,7 @@
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(149, 54);
             this.btSair.TabIndex = 8;
-            this.btSair.Text = "Sair";
+            this.btSair.Text = "Voltar ao Menu Anterior";
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 

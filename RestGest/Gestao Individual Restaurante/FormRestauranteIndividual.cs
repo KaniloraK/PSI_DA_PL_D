@@ -28,5 +28,12 @@ namespace RestGest
             this.Close();
             new RegistarTrabalhadores().Show();
         }
+
+        private void FormRestauranteIndividual_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'restGestDBDataSet.ItemMenus' table. You can move, or remove it, as needed.
+            this.itemMenusTableAdapter.Fill(this.restGestDBDataSet.ItemMenus);
+
+        }
     }
 }

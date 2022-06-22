@@ -36,5 +36,9 @@ namespace RestGest
             new FormPrincipal().Show();
         }
 
+        private void FormGlobalRestaurantes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
