@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistarRestaurante));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,9 +48,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btLimpar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,6 +95,7 @@
             this.tbNome.Size = new System.Drawing.Size(229, 22);
             this.tbNome.TabIndex = 4;
             this.tbNome.Text = " ";
+            this.tbNome.Validating += new System.ComponentModel.CancelEventHandler(this.tbNome_Validating);
             // 
             // tbCidade
             // 
@@ -100,6 +104,7 @@
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(229, 22);
             this.tbCidade.TabIndex = 5;
+            this.tbCidade.Validating += new System.ComponentModel.CancelEventHandler(this.tbCidade_Validating);
             // 
             // label5
             // 
@@ -177,6 +182,7 @@
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(229, 22);
             this.tbRua.TabIndex = 12;
+            this.tbRua.Validating += new System.ComponentModel.CancelEventHandler(this.tbRua_Validating);
             // 
             // tbCodPostal
             // 
@@ -186,6 +192,7 @@
             this.tbCodPostal.Size = new System.Drawing.Size(169, 22);
             this.tbCodPostal.TabIndex = 11;
             this.tbCodPostal.Text = " ";
+            this.tbCodPostal.Validating += new System.ComponentModel.CancelEventHandler(this.tbCodPostal_Validating);
             // 
             // tbPais
             // 
@@ -194,6 +201,7 @@
             this.tbPais.Name = "tbPais";
             this.tbPais.Size = new System.Drawing.Size(229, 22);
             this.tbPais.TabIndex = 10;
+            this.tbPais.Validating += new System.ComponentModel.CancelEventHandler(this.tbPais_Validating);
             // 
             // label7
             // 
@@ -253,6 +261,10 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FormRegistarRestaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -275,6 +287,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,5 +313,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btLimpar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

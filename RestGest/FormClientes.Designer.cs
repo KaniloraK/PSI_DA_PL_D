@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientes));
             this.label1 = new System.Windows.Forms.Label();
             this.btAdicionarCliente = new System.Windows.Forms.Button();
@@ -50,8 +51,10 @@
             this.tbTelemovel = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -144,6 +147,7 @@
             this.tbPais.Name = "tbPais";
             this.tbPais.Size = new System.Drawing.Size(219, 22);
             this.tbPais.TabIndex = 15;
+            this.tbPais.Validating += new System.ComponentModel.CancelEventHandler(this.tbPais_Validating);
             // 
             // tbNif
             // 
@@ -153,6 +157,7 @@
             this.tbNif.Size = new System.Drawing.Size(219, 22);
             this.tbNif.TabIndex = 14;
             this.tbNif.Text = " ";
+            this.tbNif.Validating += new System.ComponentModel.CancelEventHandler(this.tbNif_Validating);
             // 
             // label2
             // 
@@ -172,6 +177,7 @@
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(273, 22);
             this.tbRua.TabIndex = 12;
+            this.tbRua.Validating += new System.ComponentModel.CancelEventHandler(this.tbRua_Validating);
             // 
             // tbCodPostal
             // 
@@ -181,14 +187,16 @@
             this.tbCodPostal.Size = new System.Drawing.Size(174, 22);
             this.tbCodPostal.TabIndex = 11;
             this.tbCodPostal.Text = " ";
+            this.tbCodPostal.Validating += new System.ComponentModel.CancelEventHandler(this.tbCodPostal_Validating);
             // 
             // tbCidade
             // 
-            this.tbCidade.Location = new System.Drawing.Point(141, 193);
+            this.tbCidade.Location = new System.Drawing.Point(141, 183);
             this.tbCidade.Margin = new System.Windows.Forms.Padding(4);
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(219, 22);
             this.tbCidade.TabIndex = 10;
+            this.tbCidade.Validating += new System.ComponentModel.CancelEventHandler(this.tbCidade_Validating);
             // 
             // label7
             // 
@@ -238,7 +246,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 186);
+            this.label4.Location = new System.Drawing.Point(9, 176);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 29);
@@ -253,6 +261,7 @@
             this.tbNome.Size = new System.Drawing.Size(219, 22);
             this.tbNome.TabIndex = 4;
             this.tbNome.Text = " ";
+            this.tbNome.Validating += new System.ComponentModel.CancelEventHandler(this.tbNome_Validating);
             // 
             // tbTelemovel
             // 
@@ -261,6 +270,7 @@
             this.tbTelemovel.Name = "tbTelemovel";
             this.tbTelemovel.Size = new System.Drawing.Size(199, 22);
             this.tbTelemovel.TabIndex = 5;
+            this.tbTelemovel.Validating += new System.ComponentModel.CancelEventHandler(this.tbTelemovel_Validating);
             // 
             // pictureBox1
             // 
@@ -285,6 +295,10 @@
             this.button1.Text = "Apagar Clientes";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -302,6 +316,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,6 +344,7 @@
         private System.Windows.Forms.TextBox tbPais;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

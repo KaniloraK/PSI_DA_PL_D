@@ -48,14 +48,11 @@
             this.btSairMenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.restGestDBDataSet = new RestGest.RestGestDBDataSet();
-            this.restaurantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.restaurantesTableAdapter = new RestGest.RestGestDBDataSetTableAdapters.RestaurantesTableAdapter();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restaurantesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,6 +112,7 @@
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(241, 22);
             this.tbRua.TabIndex = 6;
+            this.tbRua.Validating += new System.ComponentModel.CancelEventHandler(this.tbRua_Validating);
             // 
             // groupBox1
             // 
@@ -146,6 +144,7 @@
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(241, 22);
             this.tbNome.TabIndex = 15;
+            this.tbNome.Validating += new System.ComponentModel.CancelEventHandler(this.tbNome_Validating);
             // 
             // tbPais
             // 
@@ -154,6 +153,7 @@
             this.tbPais.Name = "tbPais";
             this.tbPais.Size = new System.Drawing.Size(241, 22);
             this.tbPais.TabIndex = 14;
+            this.tbPais.Validating += new System.ComponentModel.CancelEventHandler(this.tbPais_Validating);
             // 
             // tbCidade
             // 
@@ -162,6 +162,7 @@
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(241, 22);
             this.tbCidade.TabIndex = 13;
+            this.tbCidade.Validating += new System.ComponentModel.CancelEventHandler(this.tbCidade_Validating);
             // 
             // tbCodPostal
             // 
@@ -170,6 +171,7 @@
             this.tbCodPostal.Name = "tbCodPostal";
             this.tbCodPostal.Size = new System.Drawing.Size(212, 22);
             this.tbCodPostal.TabIndex = 12;
+            this.tbCodPostal.Validating += new System.ComponentModel.CancelEventHandler(this.tbCodPostal_Validating);
             // 
             // label9
             // 
@@ -251,19 +253,9 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // restGestDBDataSet
+            // errorProvider1
             // 
-            this.restGestDBDataSet.DataSetName = "RestGestDBDataSet";
-            this.restGestDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // restaurantesBindingSource
-            // 
-            this.restaurantesBindingSource.DataMember = "Restaurantes";
-            this.restaurantesBindingSource.DataSource = this.restGestDBDataSet;
-            // 
-            // restaurantesTableAdapter
-            // 
-            this.restaurantesTableAdapter.ClearBeforeFill = true;
+            this.errorProvider1.ContainerControl = this;
             // 
             // AlterarRestaurante
             // 
@@ -285,8 +277,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restGestDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restaurantesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,9 +302,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private RestGestDBDataSet restGestDBDataSet;
-        private System.Windows.Forms.BindingSource restaurantesBindingSource;
-        private RestGestDBDataSetTableAdapters.RestaurantesTableAdapter restaurantesTableAdapter;
         private System.Windows.Forms.TextBox tbNome;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

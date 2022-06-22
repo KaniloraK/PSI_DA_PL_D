@@ -568,7 +568,7 @@
           <Property Name="Salario" Type="Double" Nullable="false" />
           <Property Name="Posicao" Type="String" Nullable="false" />
           <NavigationProperty Name="Restaurante" Relationship="RestGest.TrabalhadorRestaurante" FromRole="Trabalhador" ToRole="Restaurante" />
-          <Property Name="RestauranteId" Type="Int32" Nullable="false" />
+          <Property Name="RestauranteId" Nullable="false" Type="Int32" />
           <NavigationProperty Name="Pedidos" Relationship="RestGest.TrabalhadorPedido" FromRole="Trabalhador" ToRole="Pedido" />
         </EntityType>
         <Association Name="PessoaMorada">

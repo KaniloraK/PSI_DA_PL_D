@@ -12,14 +12,17 @@ namespace RestGest
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+    using System.Data.Entity.Validation;
+
     public partial class RestGestContainer : DbContext
     {
         public RestGestContainer()
             : base("name=RestGestContainer")
         {
         }
-    
+
+       
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

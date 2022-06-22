@@ -47,6 +47,8 @@
             this.tbSalario = new System.Windows.Forms.TextBox();
             this.btRegistarTrabalhador = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbTelemovel = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +66,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.tbTelemovel);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.tbPais);
             this.groupBox1.Controls.Add(this.tbPosicao);
@@ -78,9 +82,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.tbNome);
             this.groupBox1.Controls.Add(this.tbSalario);
-            this.groupBox1.Location = new System.Drawing.Point(279, 89);
+            this.groupBox1.Location = new System.Drawing.Point(251, 65);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(561, 396);
+            this.groupBox1.Size = new System.Drawing.Size(589, 420);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registar Trabalhador";
@@ -89,7 +93,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 136);
+            this.label8.Location = new System.Drawing.Point(13, 188);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 29);
@@ -98,7 +102,7 @@
             // 
             // tbPais
             // 
-            this.tbPais.Location = new System.Drawing.Point(141, 228);
+            this.tbPais.Location = new System.Drawing.Point(139, 286);
             this.tbPais.Margin = new System.Windows.Forms.Padding(4);
             this.tbPais.Name = "tbPais";
             this.tbPais.Size = new System.Drawing.Size(219, 22);
@@ -106,7 +110,7 @@
             // 
             // tbPosicao
             // 
-            this.tbPosicao.Location = new System.Drawing.Point(139, 95);
+            this.tbPosicao.Location = new System.Drawing.Point(139, 135);
             this.tbPosicao.Margin = new System.Windows.Forms.Padding(4);
             this.tbPosicao.Name = "tbPosicao";
             this.tbPosicao.Size = new System.Drawing.Size(219, 22);
@@ -117,7 +121,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 88);
+            this.label2.Location = new System.Drawing.Point(7, 135);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 29);
@@ -126,7 +130,7 @@
             // 
             // tbRua
             // 
-            this.tbRua.Location = new System.Drawing.Point(87, 321);
+            this.tbRua.Location = new System.Drawing.Point(85, 369);
             this.tbRua.Margin = new System.Windows.Forms.Padding(4);
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(273, 22);
@@ -134,7 +138,7 @@
             // 
             // tbCodPostal
             // 
-            this.tbCodPostal.Location = new System.Drawing.Point(186, 273);
+            this.tbCodPostal.Location = new System.Drawing.Point(186, 328);
             this.tbCodPostal.Margin = new System.Windows.Forms.Padding(4);
             this.tbCodPostal.Name = "tbCodPostal";
             this.tbCodPostal.Size = new System.Drawing.Size(174, 22);
@@ -143,7 +147,7 @@
             // 
             // tbCidade
             // 
-            this.tbCidade.Location = new System.Drawing.Point(141, 193);
+            this.tbCidade.Location = new System.Drawing.Point(139, 232);
             this.tbCidade.Margin = new System.Windows.Forms.Padding(4);
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(219, 22);
@@ -153,7 +157,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 313);
+            this.label7.Location = new System.Drawing.Point(12, 362);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 29);
@@ -164,7 +168,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 265);
+            this.label6.Location = new System.Drawing.Point(12, 321);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(178, 29);
@@ -175,7 +179,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 224);
+            this.label3.Location = new System.Drawing.Point(12, 279);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 29);
@@ -186,7 +190,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 49);
+            this.label5.Location = new System.Drawing.Point(12, 30);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 29);
@@ -197,7 +201,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 186);
+            this.label4.Location = new System.Drawing.Point(12, 232);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 29);
@@ -206,7 +210,7 @@
             // 
             // tbNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(139, 49);
+            this.tbNome.Location = new System.Drawing.Point(139, 37);
             this.tbNome.Margin = new System.Windows.Forms.Padding(4);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(219, 22);
@@ -215,7 +219,7 @@
             // 
             // tbSalario
             // 
-            this.tbSalario.Location = new System.Drawing.Point(139, 144);
+            this.tbSalario.Location = new System.Drawing.Point(139, 195);
             this.tbSalario.Margin = new System.Windows.Forms.Padding(4);
             this.tbSalario.Name = "tbSalario";
             this.tbSalario.Size = new System.Drawing.Size(219, 22);
@@ -243,6 +247,26 @@
             this.button1.TabIndex = 31;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 29);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Telemóvel:";
+            // 
+            // tbTelemovel
+            // 
+            this.tbTelemovel.Location = new System.Drawing.Point(153, 83);
+            this.tbTelemovel.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTelemovel.Name = "tbTelemovel";
+            this.tbTelemovel.Size = new System.Drawing.Size(219, 22);
+            this.tbTelemovel.TabIndex = 18;
+            this.tbTelemovel.Text = " ";
             // 
             // RegistarTrabalhadores
             // 
@@ -282,5 +306,7 @@
         private System.Windows.Forms.TextBox tbSalario;
         private System.Windows.Forms.Button btRegistarTrabalhador;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbTelemovel;
+        private System.Windows.Forms.Label label1;
     }
 }

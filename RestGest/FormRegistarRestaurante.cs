@@ -55,5 +55,81 @@ namespace RestGest
             this.Close();
             new FormPrincipal().Show();
         }
+
+        private void tbNome_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+            if (string.IsNullOrWhiteSpace(tbNome.Text))
+            {
+                e.Cancel = true;
+                tbNome.Focus();
+                errorProvider1.SetError(tbNome, "Nome não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbNome, "");
+            }
+        }
+
+        private void tbCodPostal_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (tbCodPostal.Text.Length < 8 || tbCodPostal.Text.Length > 8)
+            {
+                e.Cancel = true;
+                tbCodPostal.Focus();
+                errorProvider1.SetError(tbCodPostal, "Código Postal inválido!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbCodPostal, "");
+            }
+        }
+
+        private void tbCidade_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbCidade.Text))
+            {
+                e.Cancel = true;
+                tbCidade.Focus();
+                errorProvider1.SetError(tbNome, "Cidade não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbCodPostal, "");
+            }
+        }
+
+        private void tbPais_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbPais.Text))
+            {
+                e.Cancel = true;
+                tbPais.Focus();
+                errorProvider1.SetError(tbNome, "País não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbPais, "");
+            }
+        }
+
+        private void tbRua_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbRua.Text))
+            {
+                e.Cancel = true;
+                tbRua.Focus();
+                errorProvider1.SetError(tbRua, "Rua não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbRua, "");
+            }
+        }
     }
 }

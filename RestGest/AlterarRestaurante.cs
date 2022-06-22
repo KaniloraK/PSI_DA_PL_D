@@ -24,7 +24,6 @@ namespace RestGest
         {
             this.Close();
             new FormGlobalRestaurantes().Show();
-
         }
 
 
@@ -51,10 +50,6 @@ namespace RestGest
             cbRestauranteAAlterar.DisplayMember = "Nome";
             cbRestauranteAAlterar.DataSource = restaurantes;
 
-         
-
-            //container.SaveChanges();
-
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -76,17 +71,82 @@ namespace RestGest
                 tbPais.Text = restauranteSelecionado.Morada.Pais;
                 tbRua.Text = restauranteSelecionado.Morada.Rua;
             }
-
-                
-                /*
-                tbNome.Text = restaurantes.Nome;
-                tbCodPostal.Text = moradas.CodPostal;
-                tbPais.Text = moradas.Pais;
-                tbCidade.Text = moradas.Cidade;
-                tbRua.Text = moradas.Rua;
-                */
             
         }
 
+        private void tbNome_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbNome.Text))
+            {
+                e.Cancel = true;
+                tbRua.Focus();
+                errorProvider1.SetError(tbNome, "Rua não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbNome, "");
+            }
+        }
+
+        private void tbRua_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbRua.Text))
+            {
+                e.Cancel = true;
+                tbRua.Focus();
+                errorProvider1.SetError(tbRua, "Rua não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbRua, "");
+            }
+        }
+
+        private void tbCidade_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbCidade.Text))
+            {
+                e.Cancel = true;
+                tbCidade.Focus();
+                errorProvider1.SetError(tbCidade, "Rua não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbCidade, "");
+            }
+        }
+
+        private void tbCodPostal_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (tbCodPostal.Text.Length < 8 || tbCodPostal.Text.Length > 8)
+            {
+                e.Cancel = true;
+                tbCodPostal.Focus();
+                errorProvider1.SetError(tbCodPostal, "Código Postal inválido!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbCodPostal, "");
+            }
+        }
+
+        private void tbPais_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbPais.Text))
+            {
+                e.Cancel = true;
+                tbPais.Focus();
+                errorProvider1.SetError(tbPais, "Rua não pode ser deixado em branco!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(tbPais, "");
+            }
+        }
     }
 }

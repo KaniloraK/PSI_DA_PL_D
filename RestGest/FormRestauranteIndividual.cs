@@ -22,5 +22,11 @@ namespace RestGest
             this.Close();
             new FormPrincipal().Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new RegistarTrabalhadores().Show();
+        }
     }
 }
